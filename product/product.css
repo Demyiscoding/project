@@ -1,0 +1,305 @@
+@import url('../forall/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('../forall/headfoot.css');
+
+
+/* head------------------------------------------------------------ */
+
+h3{
+    padding: 20px 0 10px;
+}
+
+
+.mainblock, .photoblock, .warningblock{
+    width: 600px;
+}
+
+
+
+/* 麵包屑------------------------------------- */
+.path{
+    display: flex;
+    padding-bottom: 10px ;
+    
+}
+
+.path li{
+    padding:5px 6px;
+    position: relative;
+}
+
+.path li a{
+    color:hsla(240, 2%, 26%, 60%) ;
+    font-size: 0.8rem;
+}
+
+.path li+li:before{
+    content: '/' ;
+    color:hsla(240, 2%, 26%, 60%) ;
+    margin: 0 5px;
+    position: absolute;
+    left: -9px;
+}
+
+
+/* 商品特色------------------------------------------- */
+
+.special{
+list-style-type: circle;
+list-style-position: inside;
+}
+
+.special li{
+    margin-bottom: 10px;
+}
+
+
+.fabric{
+    display: flex; 
+   
+}
+
+.fabric img{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #dbd5d1;
+}
+
+.fabric_out, .fabric_in{
+    text-align: center;
+    margin:10px 30px ;
+}
+
+/* size------------------------------------------------ */
+
+.size{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.size p{
+    padding-bottom: 3px ;
+}
+
+.size img{
+    margin: 10px 0;
+}
+
+.size>.blue{
+    margin-bottom: 0;
+}
+
+.size>.sizepic{
+  margin-left: 100px;
+  padding-top: 10px;
+  width: 250px;
+}
+
+
+/* --------------------------------customization */
+
+
+.noticewords{
+    padding-top: 5px;
+    list-style-type:disc;
+    list-style-position: inside;
+}
+
+.noticewords li{
+    margin-bottom: 10px;
+    letter-spacing: 0.05rem;
+}
+
+
+.photos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photos img{
+    margin: 10px 0;
+}
+
+/* ------------------------------------------warnning */
+
+.warningblock{
+    margin: 20px auto 200px;
+}
+
+h4{
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.wash, .warn{
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-bottom: 20px;
+}
+
+.wash li, .warn li{
+    margin: 5px 0;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    letter-spacing: 0.05rem;
+}
+
+
+/* ----------------------------購買選單定位 */
+
+
+.all{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.right{
+    width: 350px;
+    height: 800px;
+    padding: 20px;
+    position: sticky;
+    top:0;
+}
+
+
+
+/* 選單內容---------------------------------------- */
+
+.itemname{
+    display: flex;
+    justify-content: space-between;
+}
+
+h4{
+    line-height: 1.6;
+}
+
+.itemname button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.itemname button:active{
+    color: crimson;
+}
+
+.right p{
+    letter-spacing: 1px;
+    font-size: 1.125rem;
+}
+
+.stylelist{
+    width: 98%;
+    height: 2rem;
+    background-color: #fff;
+    color: hsla(240, 2%, 26%,80%);
+    border:1px solid #414143 ;
+    outline: none;
+    border-radius: 1%;
+    margin: 5px 0;
+    padding: auto;
+}
+
+/* checkbox 1-----需收合--------------------- */
+
+.check{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+.check p{
+    margin-left: auto;
+}
+
+/* 收合內容--------------------------------- */
+
+.cus_list{
+    padding: 5px;
+}
+
+
+.cus_list>small{
+    font-size: 0.8rem;
+    color:crimson;
+    padding-left: 20px;
+}
+
+.cus_list>select{
+    width: 99%;
+    height: 2rem;
+    background-color: #fff;
+    color: hsla(240, 2%, 26%,80%);
+    border: 1px solid #414143;
+    outline:none;
+    border-radius: 1%;
+    margin: 5px 0 ;
+}
+
+/* checked後收合效果-------------------------- */
+
+#customization:checked ~ #cus_in {
+    /* display:block; */
+    max-height: 10rem;
+}
+
+#cus_in{
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out; 
+} 
+
+
+
+
+/* check 2----------不用收合----------------------------- */
+
+.border{
+    border-top: 1px dashed #414143;
+    padding-top: 10px;
+}
+
+.addpic img{
+    width: 150px;
+    margin: 8px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.addpic>a{
+font-size: 0.8rem;
+text-decoration: underline;
+text-align: center;
+}
+
+.pay{
+    margin-top:10px ;
+}
+.pay>button{
+ width: 100%;
+ height: 2rem;
+ background-color:#E9DFAD ;
+ color: #414143;
+ border: 0;
+ outline:1px solid #E9DFAD;
+ border-radius: 1%;
+ margin: 5px 0 ;
+ cursor: pointer;
+}
+
+
+
+/* foot------------------------------------------------------foot */
+

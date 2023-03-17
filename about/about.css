@@ -1,0 +1,152 @@
+@import url('../forall/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('../forall/headfoot.css');
+
+
+
+
+.path{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* story----------------------------------- */
+.storyback{
+    background-color: #DBD5D1;
+    width: 100%;
+}
+
+.storyblock{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 80px 80px 80px 60px;
+
+    position: relative;
+    
+}
+
+.storyblock img{
+    width: 35%;
+    border: 5px solid #DBD5D1;
+    position: absolute;
+    top:125px;
+    left:75px;
+}
+
+.words{
+    background-color: #f5f5f5;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 50px;
+    border-radius: 3px;
+}
+
+
+.words p{
+    font-size: 1.125rem;
+    line-height: 1.8;
+    padding: 15px 0;
+    letter-spacing: 1px;
+}
+
+
+
+
+/* ----QC----------------------- */
+
+
+.QCblock{   
+    width: 1200px;
+    margin: 0 auto 300px;
+    background-color: #f5f5f5;
+    padding: 40px;
+
+    position: relative;
+    
+}
+
+.QCblock>p{
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    line-height: 18px;
+    padding: 15px 0 40px;
+}
+
+.QCblock h3{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+/* --acron sticker--------- */
+
+.acron{
+    width: 350px;
+    position: absolute;
+    top:-63px;
+    right:25px;
+}
+
+
+
+/* ----------三欄 */
+
+
+.MAT{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.MAT>li{
+    width: 200px;
+   /* border: 1px solid #000; */
+   border-right: 1px dashed #414143;
+   padding: 0 50px;
+}
+.MAT>li:last-child{
+    border: none;
+}
+
+
+.MAT img{
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.MAT h4{
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.MAT p{
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* ----備註----------------- */
+.notice{
+    margin-top: 40px;
+}
+.notice li{
+    font-size: 12px;
+    margin: 5px 0;
+}

@@ -1,0 +1,624 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
+
+
+/* 模組--------------------- */
+body{
+    font-family: 'Mukta Mahee';
+    color: #414143;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+p{
+    line-height: 1.6;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    /* color: #6e5f61; */
+    font-size: 1.125rem;
+
+}
+
+
+.mainblock{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+i{
+    color:#6e5f61;
+}
+
+
+/* top+kv-------------------- */
+
+.top{
+    width: 100%;
+    min-width: 1200px;
+}
+
+.top img{
+    display: block;
+    height: 2rem;
+    margin: 0 auto;
+    padding: 15px 0 5px;
+}
+
+.kv{
+    background-image: url('../images/indexs/Mask\ groupkvimgfinal.svg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-width: 1200px;
+    height: 599px;
+}
+
+.kv .mainblock{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 10px;
+    /* position: relative; */
+}
+
+/* navbar左邊 nav----------------- */
+.nav{
+display: flex;
+}
+
+.nav li{
+    position: relative;
+}
+
+
+.nav>li>a{
+    /* background-color: #000 ; */
+
+    color:  #F5F5F5;
+    text-shadow:1px 1px 2px #6e5f61;
+    width: 140px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+
+/* products下的 子選單--------------------------------- */
+
+.nav ol{
+    position: absolute;
+  
+}
+.nav ol li{
+    background-color: #F5F5F5;
+    color: #6e5f61;
+    height: 50px;
+    line-height: 50px;
+}
+
+.nav ol li a{
+    color: #6e5f61;
+    font-size: 0.875rem;
+    text-shadow: none;
+    text-align: center;
+    width: 140px;
+}
+
+/* -------------子選單 hover & show ------------- */
+
+.nav>li> a:hover{
+    background-color: #6e5f61;   
+}
+
+.nav ol>li> a:hover{
+    background-color: #6e5f61;
+    color: #F5F5F5;
+}
+
+/* ol{
+    opacity: 0;
+}
+
+.nav>li:hover > ol{
+    opacity: 1;
+    transition: 0.3s ease-out;
+} */
+
+ol{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.nav>li:hover > ol{
+    max-height: 300px;
+}
+
+
+/* navbar右邊tool----------------- */
+
+.serch{}
+
+.tool li input{
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid #6e5f61;
+    width: 140px;
+    outline: none;
+    caret-color: #6e5f61;
+}
+
+.tool{
+    text-align: left;
+    position: fixed;
+    right: 50px;
+    top: 100px;
+}
+
+.tool li{
+    padding: 10px 0;
+}
+
+.tool li a{
+    color: #6e5f61;
+}
+
+.tool i{
+    margin-right:5px ;
+}
+
+/* to top---------------------------------- */
+.backtotop img{
+    position: fixed;
+    bottom: 60px;
+    right:50px;
+    width: 40px;
+    opacity: .5;
+}
+
+/* main content-------------------------------- */
+
+.short-about{
+    position: relative;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+
+}
+
+.short-about .quoteleft{
+    position: absolute;
+    top:0;
+    left:5rem;
+}
+.short-about .quoteright{
+    position: absolute;
+    bottom:0;
+    right:5rem;
+}
+
+.short-about p{
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+
+
+
+.intro{
+ display: flex;
+ margin: 0 auto;
+ justify-content: center;
+ margin-bottom: 3rem;
+}
+
+
+.intro img{
+    width: 300px;
+}
+
+.intro .words{
+    background-color: #E9DFAD;
+    width: 320px;
+    padding: 35px 30px 0;
+}
+
+.intro .words h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.intro .words p{
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.6;
+}
+
+/* 主打商品標題--------------------- */
+
+.bigtitle{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+
+.bigtitle img{
+    height: 6rem;
+    margin-right: 20px;
+}
+
+.bigtitle h1{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+}
+
+span{
+    height: 0.05rem;
+    width: 25rem;
+    background-color: #414143;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* main content part 1--------------------- */
+
+/* 1.--------------------------- */
+
+.title01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    background-color: #6e5f61;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 30px;
+    letter-spacing: 0.2rem;
+
+}
+
+.title01 h2, .title02 h2, .title03 h2{
+    font-family: 'Cabin Sketch';
+    font-size: 4rem;
+    color: #F5F5F5;
+    transform: rotate(10deg);
+}
+
+.title01 h3 , .title02 h3 , .title03 h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F5F5F5;
+}
+
+.title01 p , .title02 p{
+   color: #F5F5F5;
+}
+
+.rec-top{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.rec-top img{
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.rec-top img:hover{
+    transform: scale(1.1);
+}
+
+.rec-top i{
+    font-size: 1.5rem;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+/* 2.-------------------------- */
+
+.title02{
+    display: flex;
+    flex-direction: column;
+    background-color:#6e5f61;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+}
+
+.rec-middle{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10rem 0 8rem ;
+
+ position: relative;
+}
+
+
+/* decorate------------------------------- */
+
+
+.rec-middle >img.sti01{
+    width: 75px;
+    position: absolute;
+    top:22px;
+    left:74px;
+}
+.rec-middle >img.sti01-1{
+    width: 83px;
+    position: absolute;
+    top:537px;
+    left:-86px;
+}
+.rec-middle >img.sti02{
+    width: 70px;
+    position: absolute;
+    top:41px;
+    right: 163px;
+}
+.rec-middle >img.sti03{
+    width: 38px;
+    position: absolute;
+    bottom: 169px;
+    left: 214px;
+}
+
+.rec-middle >img.sti03-1{
+    width: 60px;
+    position: absolute;
+    bottom: 556px;
+    left: -95px;
+}
+
+.rec-middle >img.sti03-2{
+    width: 46px;
+    position: absolute;
+    bottom: 256px;
+    left: 932px;
+}
+
+.rec-middle >img.sti04{
+    width: 65px;
+    position: absolute;
+    top:387px;
+    left:85px;
+}
+.rec-middle >img.sti04-1{
+    width: 49px;
+    position: absolute;
+    top:348px;
+    left:1115px;
+}
+
+/* decorate------------------------------- */
+
+.rec-middle .forwrap01, .forwrap02{
+    display: flex;
+}
+
+.forwrap01{
+    width: 70%;
+    justify-content: space-between;
+}
+
+.forwrap02{
+    width: 45%;
+    justify-content: space-between;
+}
+
+.rec-middle img{
+    width: 250px;
+    border-radius: 50%;    
+    transition:  transform 0.3s ease;
+}
+
+.rec-middle img:hover{
+    transform: rotate(10deg);
+}
+
+.rec-middle .y{
+    box-shadow: 5px -5px 0 #e9dfad;
+}
+
+.rec-middle .w{
+    box-shadow: 5px -5px 0 #bebbb6;
+}
+
+.rec-middle .g{
+    box-shadow: 5px -5px 0 rgb(225, 223, 219);
+}
+
+
+.rec-middle .p{
+    box-shadow: 5px -5px 0 rgb(250, 187, 189);
+}
+
+
+/*3.------------------ */
+
+.background{
+    background-color: #dbd5d1;
+    padding: 100px 0;
+}
+
+.rec-bottom{
+    width: 1200px;
+    margin: 0  auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.title03{
+    display: flex;
+/* background: #000; */
+    flex-direction: column;
+    align-items:center;
+    width: 2rem;
+    padding-right: 1rem;
+}
+
+.title03 h2, .title03 h3, .rec-bottom p{
+    color: #6e5f61;
+    letter-spacing: 0.2rem;
+}
+
+
+.title03 h3, .rec-bottom .v{
+    writing-mode:vertical-rl;
+}
+
+.rec-bottom p{
+transform: translate(0, 160px );
+}
+
+.rec-bottom img{
+   border: 0.6rem solid #F5F5F5;
+   border-radius: 3px;
+}
+
+.rec-bottom .b1{
+width: 400px;
+/* background-color: #F5F5F5;
+padding-bottom: 80px; */
+}
+
+.rec-bottom .b2{
+    width: 380px;
+    margin-top:80px ;
+}
+
+
+
+/* button view more-------------------------------- */
+
+.button01, .button02, .button03{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 10rem;
+    color: #6e5f61;
+    background-color: #e9dfad;
+    border: 0;
+    border-radius: 20px;
+    line-height: 40px;
+    height: 40px;
+    /* padding: 0 30px; */
+
+    transition: 0.3s ease ;
+    margin-top: 2.5rem;
+}
+
+
+.button01:hover, .button02:hover, .button03:hover{
+    background-color: #6e5f61;
+    color: #e9dfad;
+}
+
+
+.forbutton{
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.button03{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 15px;
+    left:70px;
+    right: 70px;
+    padding: 0 40px;
+
+}
+
+/* footer波浪線-------------------------------- */
+
+.footer>img{
+    text-align: center;
+    width: 100%;
+    background-color: #dbd5d1;
+    display: block;
+    padding-bottom: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+.footback{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 10rem;
+    transform: translate(0,-0.05rem);
+}    
+
+
+.footblock{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footblock li{
+    width: 8rem;
+    line-height: 30px;
+    height: 30px;
+
+}
+
+.footblock a{
+    color: #414143;
+    font-size: 1rem;
+    display: block;i
+}
+
+
+.footleft{
+    display: flex;
+}
+
+.footmiddle img{
+    width: 60px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.footright{
+    text-align: left;
+}
+
+.footright i{
+    margin-right:5px;
+    font-size: 18px;
+}
+
+
+.copy{
+    background-color: #F5F5F5;
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+    color:hsla(240, 2%, 26%,50%) ;
+    transform: translate(0,-2px);
+    padding-bottom: 2px;
+    padding-left: 15px;
+
+}
+

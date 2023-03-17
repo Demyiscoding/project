@@ -1,0 +1,324 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
+
+
+
+
+/* 模組--------------------- */
+
+body{
+    font-family: 'Mukta Mahee';
+    color: #414143;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding: 80px 0 20px;
+}
+
+span{
+    display: block;
+    height: 0.05rem;
+    width: 25rem;
+    background-color: #414143;
+    margin: auto; 
+    margin-bottom: 100px;
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: 600;   
+}
+
+p{
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    font-size: 1.125rem;
+    color: #414143;
+}
+
+
+
+/* 麵包屑------------------------------------- */
+.path{
+    display: flex;
+    padding-bottom: 10px ;
+    
+}
+
+.path li{
+    padding:5px 6px;
+    position: relative;
+}
+
+.path li a{
+    color:hsla(240, 2%, 26%, 60%) ;
+    font-size: 0.8rem;
+}
+
+.path li+li:before{
+    content: '/' ;
+    color:hsla(240, 2%, 26%, 60%) ;
+    margin: 0 5px;
+    position: absolute;
+    left: -9px;
+}
+
+
+
+/* head------------------------------------------       head*/
+
+header{
+    background-image: url('../images/products/head70.svg');
+    width: 100%;
+    min-width: 1200px;
+    height: 70px;
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+    /* position: fixed; */
+}
+
+header img{
+    display: block;
+    height: 1.5rem;
+    margin: 0 auto;
+    padding: 5px 0 20px;
+}
+
+/* 讓nav跟tool一排 */
+.topblock{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 40px;
+
+
+    position: absolute;
+    left: 0;
+    right: 0px;;
+    top: 34px;
+}
+
+/* nav------------------------ */
+.nav{
+    display: flex;
+}
+
+.nav li{
+    position: relative;
+}
+
+.nav>li>a{
+    width: 140px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+/* products下的 子選單--------------------------------- */
+
+.nav ol{
+    position: absolute;
+}
+
+.nav ol li{
+    background-color: #F5F5F5;
+    color: #414143;
+    height: 50px;
+    line-height: 50px;
+}
+
+.nav ol li a{
+    /* color: #6e5f61; */
+    font-size: 0.875rem;
+    text-shadow: none;
+    text-align: center;
+    width: 140px;
+}
+
+/* -------------子選單 hover & show ------------- */
+
+.nav>li> a:hover{
+   color: #F5F5F5;   
+}
+
+.nav ol>li> a:hover{
+    background-color:#dbd5d1;
+    color: #414143;
+}
+
+/* ol{
+    opacity: 0;
+}
+
+.nav>li:hover > ol{
+    opacity: 1;
+} */
+
+ol{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 10;
+}
+
+.nav>li:hover > ol{
+    max-height: 300px;
+}
+
+
+
+/* tool-----------------------hover----- */
+.tool{
+display: flex;
+margin-left: auto;
+}
+
+.tool li{
+    margin-right: 10px;
+}
+
+.tool li input{
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid hsla(352, 7%, 40%, 70%);
+    color: hsla(352, 7%, 40%, 70%);
+    width: 140px;
+    outline: none;
+    caret-color: hsl(352, 7%, 40%);
+}
+
+.tool li a:hover{
+    color: #F5F5F5;
+}
+
+/* to top---------------------------------- */
+.backtotop img{
+    position: fixed;
+    bottom: 60px;
+    right:50px;
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    z-index: 1;
+}
+
+/* head over-----------------------------------------head over- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* foot------------------------------------------------------foot */
+
+.footer>img{
+    display: block;
+    text-align: center;
+    width: 100%; 
+    /* min-width: 1200px; */
+}
+
+
+.footback{
+    background-color: #dbd5d1;
+    width: 100%;
+    /* min-width: 1200px; */
+    height: 10rem;
+    transform: translate(0,-0.05rem);
+}    
+
+.footblock{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.footblock li{
+    width: 8rem;
+    line-height: 30px;
+    height: 30px;
+
+}
+
+.footblock a{
+    color: #414143;
+    font-size: 1rem;
+    display: block;i
+}
+
+
+.footleft{
+    display: flex;
+}
+
+.footmiddle img{
+    width: 60px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.footright{
+    text-align: left;
+}
+
+.footright i{
+    margin-right:5px;
+    font-size: 18px;
+}
+
+
+.copy{
+    background-color:#dbd5d1;
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+    color:hsla(240, 2%, 26%,50%);
+    transform: translate(0,-2px);
+    padding-bottom: 2px;
+    padding-left: 15px;
+}
