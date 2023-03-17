@@ -1,0 +1,108 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
+@import url("../forall/headfoot.css");
+
+
+
+
+.path{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.mainblock{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 每一排------ */
+.row{
+    display: flex;
+    padding-bottom:50px ;
+    justify-content: flex-end;
+}
+
+/* ------------------------------list */
+
+
+.row{
+    /* background-color: #fa0; */
+}
+
+.row li{
+    width: 260px;
+    /* background-color: cadetblue; */
+    text-align: left;
+    margin-left: 80px;
+   
+}
+
+.row img{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.row h4{
+    /* background-color: #087; */
+    padding: 15px 0 5px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: .5px;
+    text-align: center;
+
+}
+.bttn p{
+    /* background-color: #087; */
+    color: #6E5F61;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.125rem;
+    margin-right: auto;
+    padding-left: 10px;
+
+}
+
+.bttn{
+    /* background-color: #087; */
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.row button{
+    /* background-color: transparent;  */
+    border: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 10px 3px;
+    padding: 5px 10px;
+}
+
+.bttn button.heart{
+    color: crimson;
+}
+
+.bttn button.heart:active{
+    background-color: crimson;
+    color: #fff;
+}
+
+
+.bttn button.bag{
+    color: #6E5F61;
+}
+
+.bttn button.bag:active{
+    background-color: #E9DFAD;
+    color: #6E5F61;
+}

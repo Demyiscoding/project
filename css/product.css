@@ -173,6 +173,8 @@ h4{
 .itemname{
     display: flex;
     justify-content: space-between;
+
+    align-items: center;
 }
 
 h4{
@@ -184,10 +186,13 @@ h4{
     border: 0;
     font-size: 20px;
     cursor: pointer;
+    color: crimson;
+    border-radius: 3px;
 }
 
 .itemname button:active{
-    color: crimson;
+    background-color: crimson;
+    color: #fff;
 }
 
 .right p{
@@ -300,6 +305,13 @@ text-align: center;
 }
 
 
+
+.pay>button:hover{
+    background-color:#6E5F61;
+    color:#E9DFAD;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
 
 /* foot------------------------------------------------------foot */
 
