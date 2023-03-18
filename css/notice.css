@@ -4,8 +4,51 @@
 @import url('../forall/headfoot.css');
 
 
+
+body{
+    letter-spacing: .8px;
+    line-height: 1.6;
+}
+
+
+.mainblock h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #6E5F61;
+}
+
 .path{
     width: 1200px;
     margin: 0 auto;
 }
+
+h3{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+
+.mainblock{
+    width: 800px;
+    margin: 0 auto 200px;
+    
+}
+
+
+img.logo{
+    width: 100px;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.mainblock li{
+    list-style:circle;
+}
+
+
+.noticelist, .return{
+    padding-left: 20px;
+}
+
 
