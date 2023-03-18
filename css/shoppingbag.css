@@ -1,0 +1,249 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
+@import url("../forall/headfoot.css");
+
+
+
+body{
+    letter-spacing: 0.5px;
+}
+
+.path{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+} */
+
+
+/* .problock{
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+
+/* 流程--------------------------------- */
+
+.process{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 80px;
+
+}
+
+.process li{
+    margin:0 80px;
+    /* height: 30px; */
+    padding: 20px;
+    line-height: 0;
+    position: relative;
+}
+
+li.now{
+    background-color: #E9DFAD;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+.process li+li::before{
+    content: '--------------';
+    color: #414143;
+    position: absolute;
+    left:-105px;
+}
+
+/* ---------------------購物清單 */
+
+table{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+thead{
+    font-weight: 600;
+    text-align: left;
+    height: 25px;
+    color: #6E5F61;
+    border-bottom:1px dashed #6E5F61 ;
+}
+
+
+tr.pdrow{
+    height: 130px;
+}
+
+
+td{
+    min-width: 150px;
+    padding: 10px 0;
+}
+
+/* 商品---------------------- */
+
+td.first{
+    /* width: 450px; */
+    padding-left: 120px;
+    padding-right: 10px;
+    position: relative;
+}
+
+
+.photo img{
+    max-width: 100px;
+    display: block;
+    position: absolute;
+    top:15px;
+    left:0;
+}
+
+.pdinfo a{
+    /* background-color: #087; */
+    font-size: 14px;
+}
+
+.pdorder p{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 0 3px;
+}
+
+.pdorder small{
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* 加購------------------------------ */
+
+.no li{
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+
+/* 數量---------------------------------- */
+
+
+select{
+
+    width: 40px;
+    height: 18px;
+    background-color: #fff;
+    color: hsla(240, 2%, 26%,80%);
+    border:1px solid #6E5F61 ;
+    /* border: none; */
+    outline: none;
+    border-radius: 1%;
+}
+
+
+/* btn---------------------------------- */
+
+td button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.nexttime{
+border: 1px solid #414143;
+}
+
+
+td.price{
+    line-height: 1.6;
+}
+
+
+/* ------------------bottom */
+
+.bottomblock{
+    width: 1000px;
+    margin: 0 auto;
+    border-top:1px dashed #6E5F61;
+    padding-bottom: 200px;
+
+    position: relative;
+}
+
+
+.point{
+    display: flex;
+    padding: 30px 0;
+
+}
+
+input.coins{
+    width: 100px;
+    height: 18px;
+    /* background-color: #f5f5f5; */
+    color: hsla(240, 2%, 26%,80%);
+    border: 0;
+    border-bottom:1px solid #414143 ;
+    outline: none;
+    border-radius: 1%;
+    margin: 0 10px;
+}
+
+button.use{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #414143;
+}
+
+select.delivery{
+    width: 210px;
+    height: 28px;
+    background-color: #fff;
+    color: hsla(240, 2%, 26%,80%);
+    border:1px solid #6E5F61 ;
+    /* border: none; */
+    outline: none;
+    border-radius: 1%;
+
+}
+
+/* .total td{
+    width: 100px;
+} */
+
+
+table.total{
+    margin-top: 30px;
+    width: 400px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+
+tr.last{
+    border-top:1px dashed #6E5F61;
+}
+
+
+
+/* ----------next step------------------------ */
+
+.nextstep{
+    width: 1000px;
+    margin: 0 auto 150px;
+}
+
+.nextstep a{
+    margin-left: auto;
+    text-align: left;
+    font-size:1rem;
+    background-color: #E9DFAD;
+    color: #414143;
+    width: 50px;
+    padding: 10px 30px;
+    
+}
