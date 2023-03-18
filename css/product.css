@@ -292,7 +292,32 @@ text-align: center;
 .pay{
     margin-top:10px ;
 }
-.pay>button{
+
+
+/* ----------------結帳--------------------- */
+
+
+
+.pay a{
+    font-size: 14px;
+    background-color: #E9DFAD;
+    color: #414143;
+    padding: 10px 100px;
+    display: block;
+    text-align: center;
+    border-radius: 1%;
+}
+
+.pay a:hover{
+    background-color:#6E5F61;
+    color:#E9DFAD;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* ----------btn寫法------------ */
+
+/* .pay>a button{
  width: 100%;
  height: 2rem;
  background-color:#E9DFAD ;
@@ -305,6 +330,28 @@ text-align: center;
 }
 
 
+
+.pay>a button:hover{
+    background-color:#6E5F61;
+    color:#E9DFAD;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+} */
+
+/* ---------------加入購物袋------------------- */
+
+.pay>button{
+font-size: 14px;
+ width: 100%;
+ height: 2rem;
+ background-color:#E9DFAD ;
+ color: #414143;
+ border: 0;
+ outline:1px solid #E9DFAD;
+ border-radius: 1%;
+ margin: 5px 0 ;
+ cursor: pointer;
+}
 
 .pay>button:hover{
     background-color:#6E5F61;
