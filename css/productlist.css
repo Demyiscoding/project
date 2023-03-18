@@ -19,10 +19,16 @@ h3{
 
 .mainblock{
     width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-bottom:  100px;
+
+    position: relative;
 }
 
-/* 每一排------ */
+/* 每排------------------------------ */
 .row{
     display: flex;
     padding-bottom:50px ;
@@ -32,16 +38,64 @@ h3{
 /* ------------------------------list */
 
 
-.row{
-    /* background-color: #fa0; */
+.list{
+    width: 140px;
+    margin-right: auto;
+    /* background-color: #086; */
+    position: sticky;
+    top:0;
+    left:120px;
 }
+
+.list li{
+    width: 100%;
+    padding: 15px 0;
+    border-bottom:1px dashed #6E5F61;
+
+}
+
+.list a{
+    display:block;
+    color: #6E5F61;
+    font-size: 14px;
+    /* text-align: center; */
+}
+
+.list a:hover{
+    transform: scale(1.1);
+    font-weight: 600;
+    transition: transform .1s ease;
+}
+
+
+/* 篩選------------------------------------- */
+
+.filter{
+    position: absolute;
+    top:-47px;
+    right: 1px;
+
+    width: 100px;
+    height: 18px;
+    background-color: #fff;
+    color: hsla(240, 2%, 26%,80%);
+    /* border:1px solid #6E5F61 ; */
+    border: none;
+    outline: none;
+    /* border-radius: 1%; */
+    margin: 5px 0;
+    padding: auto;
+}
+
+/* items--------------------------------------- */
+
 
 .row li{
     width: 260px;
-    /* background-color: cadetblue; */
+    height: 420px;
     text-align: left;
     margin-left: 80px;
-   
+    position: relative;
 }
 
 .row img{
@@ -49,6 +103,13 @@ h3{
     width: 100%;
     border-radius: 3px;
 }
+
+.row img:hover{
+    opacity: 0.7;
+    transform: scale3d(0.95, 0.95, 1.1);
+    transition: 0.3s ease;
+}
+
 
 .row h4{
     /* background-color: #087; */
@@ -76,10 +137,14 @@ h3{
     justify-content:end;
     align-items: center;
     padding-top: 20px;
+    /* margin-top:0 ;
+    vertical-align: bottom; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .row button{
-    /* background-color: transparent;  */
     border: 0;
     font-size: 1.5rem;
     cursor: pointer;
@@ -99,10 +164,68 @@ h3{
 
 
 .bttn button.bag{
+    background-color: #E9DFAD;
     color: #6E5F61;
 }
 
 .bttn button.bag:active{
-    background-color: #E9DFAD;
-    color: #6E5F61;
+    background-color: #6E5F61;
+    color:  #E9DFAD;
 }
+
+
+
+
+/* ----------------------------頁碼 */
+
+.page{
+    width: 1200px;
+    margin: 0 auto 100px;
+
+}
+.page ul{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #000; */
+}
+.page li{
+    padding: 10px;
+    /* background-color: #DBD5D1; */
+    border-radius: 1px;
+    margin: 0 3px;
+
+}
+.page li.now{
+    background-color: #DBD5D1;
+
+}
+
+.page li.next{
+    background-color: #fff;
+    outline: 1px solid #DBD5D1;
+}
+
+
+/* .page a{
+    display: block;
+} */
+
+
+
+
+
+/* 警告------------------------------ */
+.donot{
+    width: 1200px;
+    margin: 0 auto 100px;
+    text-align:right;
+   
+}
+
+small{
+    font-size: 12px;
+    color: #ccc;
+}
+
+
+
