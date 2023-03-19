@@ -177,11 +177,17 @@
     cursor: pointer;
 }
 
-.btn>p{
+/* .button.pay{
     font-size: 14px;
     color: #6E5F61;
     margin-top: 5px;
     letter-spacing: 0.5px;
+} */
+
+.btn>.pay:hover{
+    background-color: #6E5F61;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 
