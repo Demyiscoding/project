@@ -186,6 +186,13 @@ button.use{
     border: 1px solid #414143;
 }
 
+
+.bhover:hover{
+    background-color: #414143;
+    color: #fff;
+}
+
+
 select.delivery{
     width: 210px;
     height: 28px;
