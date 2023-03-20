@@ -233,12 +233,13 @@ tr.last{
 }
 
 .nextstep a{
+    display: block;
     margin:0 auto;
-    text-align: left;
+    text-align: center;
     font-size:1rem;
+    line-height: 40px;
     background-color: #E9DFAD;
     color: #414143;
-    width: 50px;
-    padding: 10px 30px;
-    
+    width: 70px;
+    padding: 0 10px;
 }
