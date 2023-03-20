@@ -18,44 +18,87 @@ h3{
 }
 
 
+
+
 /* story----------------------------------- */
+
+
 .storyback{
     background-color: #DBD5D1;
     width: 100%;
+    
 }
 
+
+/* 
 .storyblock{
     width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content:end;
     align-items: center;
     padding: 80px 80px 80px 60px;
 
     position: relative;
-    
 }
 
 .storyblock img{
     width: 35%;
     border: 5px solid #DBD5D1;
     position: absolute;
-    top:125px;
-    left:75px;
+    top:26%;
+    right:70%;
+}
+ */
+
+
+ 
+.storyblock{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 80px 80px 80px 60px;
+    /* position: relative; */
 }
 
+.storyblock img{
+    width: 45%;
+    border: 5px solid #DBD5D1;
+    position: absolute;
+    top:26%;
+    right:70%;
+}
+
+
+
 .words{
+    width: 60%;
     background-color: #f5f5f5;
     padding: 40px;
     padding-left: 100px;
     padding-right: 50px;
     border-radius: 3px;
+
+
+    position: relative;
 }
 
 
+
+/* .words{
+    background-color: #f5f5f5;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 50px;
+    border-radius: 3px;
+} */
+
+
 .words p{
-    font-size: 1.125rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
     padding: 15px 0;
     letter-spacing: 1px;
 }
@@ -94,10 +137,10 @@ h3{
 /* --acron sticker--------- */
 
 .acron{
-    width: 350px;
+    width: 320px;
     position: absolute;
-    top:-63px;
-    right:25px;
+    top:-57px;
+    right:3px;
 }
 
 
