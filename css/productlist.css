@@ -49,13 +49,13 @@ h3{
 
 .list li{
     width: 100%;
-    padding: 15px 0;
     border-bottom:1px dashed #6E5F61;
 
 }
 
 .list a{
     display:block;
+    padding: 15px 0;
     color: #6E5F61;
     font-size: 14px;
     /* text-align: center; */
@@ -81,6 +81,7 @@ h3{
     color: hsla(240, 2%, 26%,80%);
     /* border:1px solid #6E5F61 ; */
     border: none;
+    border-bottom:1px solid #414143;
     outline: none;
     /* border-radius: 1%; */
     margin: 5px 0;

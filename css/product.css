@@ -169,6 +169,11 @@ h4{
 
 
 /* 選單內容---------------------------------------- */
+.right{
+ border-left: 1px dashed #414143;
+ height: 620px;
+}   
+
 
 .itemname{
     display: flex;

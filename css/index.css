@@ -142,7 +142,6 @@ ol{
 
 /* navbar右邊tool----------------- */
 
-.serch{}
 
 .tool li input{
     background-color: transparent;
@@ -158,6 +157,7 @@ ol{
     position: fixed;
     right: 50px;
     top: 100px;
+    z-index: 9;
 }
 
 .tool li{
