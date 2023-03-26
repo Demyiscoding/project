@@ -21,6 +21,7 @@ body{
     color: #6E5F61;
 }
 
+
 .path{
     width: 1200px;
     margin: 0 auto;
@@ -42,6 +43,17 @@ img.logo{
     list-style:circle;
 }
 
+
+ul.step li{
+    /* display: block; */
+    padding-left:20px ;
+    list-style:none;
+}
+
+
+.noticelist{
+    padding:10px 0 ;
+}
 
 .noticelist, .return{
     padding-left: 20px;

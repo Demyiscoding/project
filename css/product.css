@@ -347,12 +347,12 @@ text-align: center;
 
 .pay>button{
 font-size: 14px;
- width: 100%;
+ width: 99%;
  height: 2rem;
- background-color:#E9DFAD ;
- color: #414143;
+ background-color:#fff ;
+ color: #6E5F61;
  border: 0;
- outline:1px solid #E9DFAD;
+ outline:1px solid #6E5F61;
  border-radius: 1%;
  margin: 5px 0 ;
  cursor: pointer;
@@ -360,7 +360,7 @@ font-size: 14px;
 
 .pay>button:hover{
     background-color:#6E5F61;
-    color:#E9DFAD;
+    color:#fff;
     font-weight: 600;
     transition: background-color 0.3s ease;
 }

@@ -6,6 +6,16 @@
 
 
 
+
+body{
+    background-image: url("../images/about/IMG_9640\ 1aboutbg.jpg");
+    background-repeat: no-repeat;
+    
+    background-position: top;
+    background-size: contain;
+    min-width: 100%;
+}
+
 .path{
     width: 1200px;
     margin: 0 auto;

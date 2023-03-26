@@ -93,9 +93,17 @@ h3{
 
 .row li{
     width: 260px;
+    min-width: 120px;
+
     height: 420px;
     text-align: left;
     margin-left: 80px;
+
+    background-color: #fff;
+    border: 1px #6E5F61;
+    border-style:dotted;
+    border-bottom-left-radius: 3%;
+    border-bottom-right-radius: 3%;
     position: relative;
 }
 
@@ -107,7 +115,7 @@ h3{
 
 .row img:hover{
     opacity: 0.7;
-    transform: scale3d(0.95, 0.95, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
     transition: 0.3s ease;
 }
 
@@ -156,22 +164,13 @@ h3{
 
 .bttn button.heart{
     color: crimson;
-}
-
-.bttn button.heart:active{
-    background-color: crimson;
-    color: #fff;
-}
-
-
-.bttn button.bag{
-    background-color: #E9DFAD;
+    background-color: transarent;
     color: #6E5F61;
 }
 
 .bttn button.bag:active{
-    background-color: #6E5F61;
-    color:  #E9DFAD;
+    background-color: #E9DFAD;
+    /* color:  #E9DFAD; */
 }
 
 
@@ -181,7 +180,17 @@ h3{
 
 .page{
     width: 1200px;
-    margin: 0 auto 100px;
+    margin: 0 auto 100px;parent;
+}
+
+.bttn button.heart:active{
+    background-color: crimson;
+    color: #fff;
+}
+
+
+.bttn button.bag{
+    background-color:transp
 
 }
 .page ul{
