@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./forall/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/indexrwd.css">
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <title>CÔTE À CÔTE首頁</title>
 </head>
@@ -14,14 +15,43 @@
     <header>
         <!-- LOGObar -->
         <div class="kv">
+<!-- --------rwdham------------------------- -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <!-- <span class="bar"></span> -->
+            </div>
+<!-- --------rwdham------------------------- -->            
+
             <div class="top"> 
                 <a href="./index.html">
                     <img src="./images/indexs/darklogo.svg" alt="COTE A COTE">
                 </a>
             </div>
-             <!-- navbar -->
-             <div class="mainblock">
-                <ul class="nav">
+
+<!-- ---------  rwdtool----------------------- -->
+            <ul class="rwdtool">
+                <li>
+                    <a href="#"><i class="ai-heart"></i></a>
+                </li>
+                <li>
+                    <a href="./shoppingbag.html"><i class="ai-shopping-bag"></i></a>
+                </li>
+            </ul> 
+
+<!-- ---------  rwdtool----------------------- -->
+
+            <div class="navbar"><!-- navbar -->
+                <ul class="nav"> 
+<!-- -----------------------------rwd選單 -->
+                    <li class="rwdnav">
+                        <a href="./member.html"><i class="ai-person"></i>LOG IN / SIGN UP</a>
+                    </li>
+                    <li class="rwdnav2"><i class="ai-search"></i>
+                        <form method="post"><input type="text" placeholder= "SEARCH"></form>
+                    </li>
+<!-- -----------------------------rwd選單 -->
+
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./notice.html">NOTICE</a></li>
                     <li><a href="#">PRODUCTS</a>
@@ -35,12 +65,52 @@
                             <li><a href="#">送禮組合</a></li>
                         </ol>
                     </li>   
-                    <li><a href="#">MY ORDERS</a></li>    
+                    <li><a href="#">MY ORDERS</a></li>   
+                    
+<!-- ---------------rwdfoot---------------------------------- -->
+                    <li class = rwdfooter>
+                        <div class="footer">
+                            <img src="./images/indexs/foottop.png" alt="">
+                
+                            <div class="footback"> <!--無寬度 背景色-->
+                                <div class="footblock">
+                                    <div class="footleft">
+                                        <ul>
+                                            <li><a href="./about.html">品質認證</a></li>
+                                            <li><a href="./member.html">會員專區</a></li>
+                                            <li><a href="./member.html">訂單查詢</a></li>
+                                            <li><a href="./notice.html">購物須知</a></li>
+                                        </ul>
+                                    </div><!--footleft-->
+
+                                    <div class="footflex"> <!--圖跟聯絡我們並排-->
+                                        <div class="footmiddle">
+                                            <img src="./images/indexs/square logo.svg" alt="">
+                                        </div> <!--footmiddle-->
+                    
+                                        <div class="footright">
+                                            <ul>
+                                                <li><a href="#"><i class="ai-envelope"></i></a></li>
+                                                <div class="forflex">
+                                                    <li><a href="https://www.facebook.com/coteacote.tw" target="_blank"><i class="ai-facebook-fill"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/coteacote.tw/"  target="_blank"><i class="ai-instagram-fill"></i></a></li>
+                                                </div>
+                                            </ul>
+                                        </div><!--footright-->
+                                    </div>  
+                                    <!--footflex-->  
+                                </div><!--footblock-->                
+                            </div><!--footback-->
+                        </div> <!--footer-->
+                
+                        <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
+                    </li>
                 </ul>
+<!-- ---------------rwdfoot---------------------------------- -->
 
                 <ul class="tool">
                     <li> <i class="ai-search"></i>
-                        <form method="post"><input type="text" placeholder="search"></form></li>
+                        <form method="post"><input type="text" placeholder="SEARCH"></form></li>
                     <li>
                          <a href="./member.html"><i class="ai-person"></i>LOGIN</a>
                     </li>
@@ -51,11 +121,10 @@
                         <a href="./shoppingbag.html"><i class="ai-shopping-bag"></i>MY SHOPPING BAG</a>
                     </li>
                 </ul>   
-
                 <div class="backtotop">  <!--to top-->
                     <a href="#"><img src="./images/products/backtotopblack.png" alt=""></a>
                 </div>
-            </div> <!--kv-mainblock-->
+            </div> <!--navbar-->
         </div><!--kv-->
     </header>  
 
@@ -85,7 +154,7 @@
             <div class="bigtitle">
                 <img src="./images/indexs/sticker.svg" alt="">
                 <h1>設計師主打商品</h1>
-                <span></span>
+                <span class="titleline"></span>
             </div>
         
             <div class="title01">
@@ -96,7 +165,7 @@
                         </div> 
             </div> <!--title01-->
 
-            <div class="rec-top">
+            <div class="rec-top" >
                 <img src="./images/indexs/rectop01.png" alt="">
                 <i class="ai-chevron-left"></i>
                 <img src="./images/indexs/rectop02.png" alt="">
@@ -107,17 +176,16 @@
             <a class="button01" href="./productlist.html">VIEW MORE</a>
             
         <!-- 2-------------------------------------------------------- -->
-
             <div class="rec-middle">
                 
-                <img class="sti01" src="./images/indexs/acronlogo 8.png" alt="">
-                <img class="sti01-1" src="./images/indexs/acronlogo 8.png" alt="">
-                <img class="sti02" src="./images/indexs/acronlogo 7.png" alt="">
-                <img class="sti03" src="./images/indexs/Mask group.png" alt="">
-                <img class="sti03-1" src="./images/indexs/Mask group.png" alt="">
-                <img class="sti03-2" src="./images/indexs/Mask group.png" alt="">
-                <img class="sti04" src="./images/indexs/sticker.svg" alt="">
-                <img class="sti04-1" src="./images/indexs/acronlogo 5.png" alt="">
+                <img class="sti01"  src="./images/indexs/acronlogo 8.png" alt="">
+                <img class="sti01-1 dec" src="./images/indexs/acronlogo 8.png" alt="">
+                <img class="sti02 dec" src="./images/indexs/acronlogo 7.png" alt="">
+                <img class="sti03 dec" src="./images/indexs/Mask group.png" alt="">
+                <img class="sti03-1 dec" src="./images/indexs/Mask group.png" alt="">
+                <img class="sti03-2 dec" src="./images/indexs/Mask group.png" alt="">
+                <img class="sti04 dec" src="./images/indexs/sticker.svg" alt="">
+                <img class="sti04-1 dec" src="./images/indexs/acronlogo 5.png" alt="">
 
                     <div class="forwrap01">   
                         <img class="y" src="./images/indexs/recmiddle04.jpeg" alt="黃">
@@ -138,6 +206,7 @@
 
         </div> <!--mainblock-->
     </section>
+  
      <!-- 3.-------------------------------------------------------- -->
     <section>
         <div class="background">
@@ -158,8 +227,8 @@
         </div><!--background-->
     </section>    
 
-
     <!--foot---------------------------------------------------------------------->
+    
     <footer>       
         <div class="footer">
             <img src="./images/indexs/Vector 2footer.svg" alt="">
@@ -203,6 +272,31 @@
             </div><!--footback-->
         </div> <!--footer-->
 
-        <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
+        <div class="copy">Copyright © COTE A COTE all rights reserved.
+        </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+
+
 </body>

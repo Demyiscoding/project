@@ -161,12 +161,22 @@ h3{
     margin: 10px 3px;
     padding: 5px 10px;
 }
-
+/* 
 .bttn button.heart{
-    color: crimson;
-    background-color: transarent;
-    color: #6E5F61;
+    background-color: transparent;
+    color: #414143;
+} */
+
+.bttn button.heart:active{
+    background-color: crimson;
+    color: #fff;
 }
+
+/* 
+.bttn button.bag{
+    background-color:transparent;
+    color: #414143;
+} */
 
 .bttn button.bag:active{
     background-color: #E9DFAD;
@@ -180,19 +190,10 @@ h3{
 
 .page{
     width: 1200px;
-    margin: 0 auto 100px;parent;
-}
-
-.bttn button.heart:active{
-    background-color: crimson;
-    color: #fff;
+    margin: 0 auto 100px;
 }
 
 
-.bttn button.bag{
-    background-color:transp
-
-}
 .page ul{
     display: flex;
     justify-content: flex-end;

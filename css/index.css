@@ -2,7 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Mukta+Mahee:wght@300;400&display=swap');
 
+/* rwd-------------------------------------------------- */
 
+.rwdnav{
+    display: none;
+}
+
+.rwdnav2{
+    display: none;
+}
+
+.rwdtool{
+    display: none;
+}
+
+.hamburger{
+    display:none;
+}
+
+.rwdfooter{
+    display: none;
+}
 /* 模組--------------------- */
 body{
     font-family: 'Mukta Mahee';
@@ -40,7 +60,8 @@ i{
 
 .top{
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
+  /* width: 1200px; */
 }
 
 .top img{
@@ -51,18 +72,23 @@ i{
 }
 
 .kv{
-    background-image: url('../images/indexs/Mask\ groupindexbg.jpg');
+    background-image: url('../images/indexs/indexbg.png');
     background-position: center center;
     background-size: cover;
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
+    /* width: 1200px; */
     height: 599px;
 }
 
-.kv .mainblock{
+.kv .navbar{
+
     display: flex;
     /* justify-content: space-between; */
     padding-top: 10px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
     /* position: relative; */
 }
 
@@ -267,7 +293,7 @@ ol{
     letter-spacing: 0.08rem;
 }
 
-span{
+span.titleline{
     height: 0.05rem;
     width: 25rem;
     background-color: #414143;
@@ -486,7 +512,8 @@ align-items: center;
 }
 
 
-.title03 h3, .rec-bottom .v{
+.title03 h3, 
+.rec-bottom .v{
     writing-mode:vertical-rl;
 }
 
@@ -495,8 +522,8 @@ transform: translate(0, 160px );
 }
 
 .rec-bottom img{
-   border: 0.6rem solid #F5F5F5;
-   border-radius: 3px;
+    border: 0.6rem solid #F5F5F5;
+    border-radius: 3px;
 }
 
 .rec-bottom .b1{
@@ -593,7 +620,7 @@ padding-bottom: 80px; */
 .footblock a{
     color: #414143;
     font-size: 1rem;
-    display: block;i
+    display: block;
 }
 
 
@@ -628,4 +655,7 @@ padding-bottom: 80px; */
     padding-left: 15px;
 
 }
+
+
+
 
