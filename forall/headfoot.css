@@ -4,6 +4,33 @@
 
 
 
+/* rwd-------------------------------------------------- */
+
+.rwdnav{
+    display: none;
+}
+
+.rwdnav2{
+    display: none;
+}
+
+.rwdtool{
+    display: none;
+}
+
+.hamburger{
+    display:none;
+}
+
+.rwdfooter{
+    display: none;
+}
+
+#menuarrow{
+    display: none;
+}
+
+
 
 /* 模組--------------------- */
 

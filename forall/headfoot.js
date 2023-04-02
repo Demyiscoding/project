@@ -13,20 +13,16 @@ $(document).ready(function() {
 const ham = document.getElementsByClassName("hamburger")[0];
 const bar1 = document.getElementsByClassName("bar1")[0];
 const bar2 = document.getElementsByClassName("bar2")[0];
-let burgeropen = document.getElementById("mask");
-// let whole = document.documentElement;
+let menu = document.getElementById("menu");
 // console.log(ham);
 // console.log(bar1);
 // console.log(bar2);
 // console.log(menu);
-// console.log(burgeropen);
 
 ham.addEventListener("click", function(){
         bar1.classList.toggle("rotate1");
         bar2.classList.toggle("rotate2");
         menu.classList.toggle("open");
-        burgeropen.classList.toggle("active");
-        // whole.classList.toggle("bgcolor");
         open = true
 });
 

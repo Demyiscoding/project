@@ -13,13 +13,13 @@
 <body>
 
     <header>
+        <div id="mask"></div>
         <!-- LOGObar -->
         <div class="kv">
 <!-- --------rwdham------------------------- -->
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <!-- <span class="bar"></span> -->
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
             </div>
 <!-- --------rwdham------------------------- -->            
 
@@ -42,7 +42,7 @@
 <!-- ---------  rwdtool----------------------- -->
 
             <div class="navbar"><!-- navbar -->
-                <ul class="nav"> 
+                <ul class="nav" id="menu"> 
 <!-- -----------------------------rwd選單 -->
                     <li class="rwdnav">
                         <a href="./member.html"><i class="ai-person"></i>LOG IN / SIGN UP</a>
@@ -54,9 +54,9 @@
 
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./notice.html">NOTICE</a></li>
-                    <li><a href="#">PRODUCTS</a>
+                    <li class="addarrow"><a href="#">PRODUCTS <i class="ai-chevron-right" id="menuarrow"></i></a>
                          <!-- 子選單 -->
-                        <ol>
+                        <ol class="childlist">
                             <li><a href="#">所有商品</a></li>
                             <li><a href="./productlist.html">六層紗口水巾</a></li>
                             <li><a href="#">設計款髮帶</a></li>
@@ -265,9 +265,9 @@
                     </div><!--footright-->
                 </div><!--footblock-->
 
-                <div class="backtotop"> 
+                <!-- <div class="backtotop"> 
                     <a href="#"><img src="./images/products/backtotopblack.png" alt=""></a>
-                </div>
+                </div> -->
 
             </div><!--footback-->
         </div> <!--footer-->
@@ -276,26 +276,7 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
 
 

@@ -23,6 +23,11 @@
 .rwdfooter{
     display: none;
 }
+
+#menuarrow{
+    display: none;
+}
+
 /* 模組--------------------- */
 body{
     font-family: 'Mukta Mahee';
@@ -212,6 +217,7 @@ ol{
     right:50px;
     width: 40px;
     opacity: .5;
+    z-index: 99;
 }
 
 /* main content-------------------------------- */
