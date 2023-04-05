@@ -1,0 +1,90 @@
+@import url("../forall/RWDheadfoot.css");
+@media screen and (max-width:415px) {
+
+    /* .body{;
+        min-width: auto;
+        width: 100%;
+    } */
+
+    .path{
+        width: 330px;
+    }
+
+    .storyblock{
+        width: 100%;
+        padding: 0px;
+        padding-top: 180px;
+        padding-bottom: 30px;
+        flex-direction: column;
+
+    }
+
+ 
+    .storyblock img{
+    /* position: static; */
+    width: 250px;
+    top:-40%;
+    right:19%;
+    }
+
+    .words{
+        width:300px;
+        padding:50px 50px;
+        margin: 20px;
+    }
+
+    .words p{
+        width: 320px;
+    }
+
+
+/* 下半部------------------------------ */
+
+.QCblock{ 
+    width: 360px;
+    padding: 0;
+    padding:0 20px;
+ } 
+
+.QCblock>p{
+    width: 320px;
+    margin: auto;
+    line-height: 1.6;
+    text-align: left;
+    padding-bottom: 0;
+
+}
+
+
+
+ .MAT{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 50px;
+ }
+
+
+ .MAT>li{
+    width:250px;
+    border-right:none ;
+    border-bottom: 1px dashed #414143;
+    padding: 40px 0;
+ }
+
+ .notice li{
+    letter-spacing: 1px;
+}
+
+
+.acron{
+    width: 250px;
+    top:-82px;
+    right:81px;
+}
+
+
+    .none{
+        display:none;
+    }    
+}

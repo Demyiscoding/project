@@ -8,12 +8,14 @@
 
 
 body{
-    background-image: url("../images/about/IMG_9640\ 1aboutbg.jpg");
+    /* background-image: url("../images/about/IMG_9640\ 1aboutbg.jpg"); */
+
+    background-image: url("../images/about/aboutbgpcatt.jpg");
     background-repeat: no-repeat;
-    
     background-position: top;
-    background-size: contain;
-    min-width: 100%;
+    background-size: cover;
+    /* min-width: 100%; */
+    background-attachment:fixed;
 }
 
 .path{
@@ -34,7 +36,7 @@ h3{
 
 
 .storyback{
-    background-color: #DBD5D1;
+    background-color: hsl(24, 12%, 84%, 80%);
     width: 100%;
     
 }
@@ -122,7 +124,7 @@ h3{
 .QCblock{   
     width: 1200px;
     margin: 0 auto 300px;
-    background-color: #f5f5f5;
+    background-color: hsl(0, 0%, 96%,80%);
     padding: 40px;
 
     position: relative;
@@ -131,9 +133,9 @@ h3{
 
 .QCblock>p{
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1rem;
     letter-spacing: 1px;
-    line-height: 18px;
+    line-height: 1.6;
     padding: 15px 0 40px;
 }
 
@@ -161,7 +163,7 @@ h3{
 .MAT{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding: 20px 0 80px;
 }
 
 .MAT>li{
@@ -191,7 +193,9 @@ h3{
 }
 
 .MAT p{
+    font-size: 0.875rem;
     line-height: 1.6;
+    letter-spacing: 2px;
     margin: 10px 0;
 }
 
@@ -202,4 +206,6 @@ h3{
 .notice li{
     font-size: 12px;
     margin: 5px 0;
+    letter-spacing: 1px;
+    line-height: 1.4;
 }

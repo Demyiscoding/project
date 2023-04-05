@@ -1,0 +1,154 @@
+@import url("../forall/RWDheadfoot.css");
+@media screen and (max-width: 415px){
+
+   
+    .mainblock, .photoblock, .warningblock{
+         max-width: 330px;
+         width: 100%;
+         margin: 0 auto;
+    }
+
+    .resize{
+        width: 330px;
+    }
+
+
+
+    .fabric{
+        justify-content: center;
+    }
+    .fabric img{
+        width: 120px;
+    }
+
+    .fabric_out, .fabric_in{
+        margin:10px 20px ;
+    }
+
+    .size>.sizepic{
+        margin-left:40px;
+        width: 180px;
+    }
+
+
+    .noticewords{
+        width: 330px;
+    }
+
+    .noticewords li{
+        line-height: 1.6;
+    }
+
+    .warn{
+        padding-bottom:100px ;
+    }
+
+    .warn li{
+        line-height: 1.6;
+    }
+
+
+    /* 購買選單-------------------------- */
+    
+   
+    
+    .right{
+        display: none;
+        background-color: #fff;
+        border-top: 1px dashed #414143;
+        border-left:none ;
+        height: 660px;
+        position: fixed;
+        top:100%; 
+
+    }
+
+    .right,.opentobuy{
+        top:154px;
+        transition: 0.3s ease-out;
+    }
+
+
+
+    .buybuybuy{
+        background-color: #E9DFAD;
+        width: 99%;
+        margin: 0 auto;
+        border: none;
+        line-height: 40px;
+        color: #414143;
+        font-size: 1.2rem;
+        /* font-weight: 500; */
+        letter-spacing: 3px;
+
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /* margin: 0 auto; */
+        text-align: center;
+
+    }
+
+
+
+
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+    
+    /* ---------------暫時display none-------------- */
+    
+    
+        /* 套用於要隱藏的內容 並不存在在正式內容中 */
+        .none{
+            display: none;
+        }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        

@@ -104,6 +104,8 @@ display: flex;
 
 .nav li{
     position: relative;
+
+   
 }
 
 
@@ -123,6 +125,9 @@ display: flex;
 
 .nav ol{
     position: absolute;
+
+    border-bottom-left-radius:3px ;
+    border-bottom-right-radius:3px ;
   
 }
 .nav ol li{
@@ -143,7 +148,7 @@ display: flex;
 /* -------------子選單 hover & show ------------- */
 
 .nav>li> a:hover{
-    background-color: #6e5f61;   
+    background-color: hsl(352, 7%, 40%, 70%);   
 }
 
 .nav ol>li> a:hover{

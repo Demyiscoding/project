@@ -1,0 +1,43 @@
+@import url("../forall/RWDheadfoot.css");
+@media screen and (max-width: 415px){
+
+
+
+
+.backtotop img{
+    display: none;
+}    
+
+.path{
+    width: 330px;
+} 
+
+.mainblock{
+    width: 60%;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+#tab1{
+    display: none;
+}
+
+#tab2{
+    display:block ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+    

@@ -57,7 +57,6 @@ list-style-position: inside;
 
 .fabric{
     display: flex; 
-   
 }
 
 .fabric img{
@@ -164,15 +163,14 @@ h4{
     padding: 20px;
     position: sticky;
     top:0;
+
+    border-left: 1px dashed #414143;
+    height: 620px;
 }
 
 
 
 /* 選單內容---------------------------------------- */
-.right{
- border-left: 1px dashed #414143;
- height: 620px;
-}   
 
 
 .itemname{

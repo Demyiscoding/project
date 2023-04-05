@@ -6,52 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./forall/reset.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/aboutrwd.css">
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <title>CÔTE À CÔTE關於我們</title>
 </head>
 <body>
     <header>
-        <a href="./index.html"> 
-        <img src="./images/products/darklogo.svg" alt="">
-        </a>
-           
-         <div class="topblock">
-            <ul class="nav">
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./notice.html">NOTICE</a></li>
-                <li><a href="#">PRODUCTS</a>
-                     <!-- 子選單 -->
-                    <ol>
-                        <li><a href="#">所有商品</a></li>
-                        <li><a href="./productlist.html">六層紗口水巾</a></li>
-                        <li><a href="#">設計款髮帶</a></li>
-                        <li><a href="#">質感奶嘴夾</a></li>
-                        <li><a href="#">兒童工作服</a></li>
-                        <li><a href="#">送禮組合</a></li>
-                    </ol>
-                </li>   
-                <li><a href="#">MY ORDERS</a></li>    
-            </ul>
-
-            <ul class="tool">
-
-                <li><i class="ai-search"></i></li>
+        <div class="forrwdflex">      
+    <!-- --------rwdham------------------------- -->
+            <div class="hamburger">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+            </div>
+    <!-- --------rwdham------------------------- -->  
+    
+            <a href="index.html"> 
+                <img src="../images/products/darklogo.svg" alt="">
+            </a>
+    
+    <!-- ---------  rwdtool----------------------- -->
+            <ul class="rwdtool">
                 <li>
-                    <form method="post"><input type="text" placeholder="search"></form></li>
-
-                <li><a href="./member.html"><i class="ai-person"></i></a></li>
-                <li> <a href="#"><i class="ai-heart"></i></a></li>
-                <li> <a href="./shoppingbag.html"><i class="ai-shopping-bag"></i></a></li>
-            </ul>  
-            <div class="backtotop"> 
-                <a href="#"> <img src="./images/products/backtotopblack.png" alt=""></a> 
-            </div>        
-        </div> <!--topblock-->
-    </header>
+                    <a href="#"><i class="ai-heart"></i></a>
+                </li>
+                <li>
+                    <a href="./shoppingbag.html"><i class="ai-shopping-bag"></i></a>
+                </li>
+            </ul> 
+        </div>
+    <!-- ---------  rwdtool----------------------- -->
+    
+            <div class="topblock">
+                <ul class="nav" id="menu"> 
+    <!-- -----------------------------rwd選單 -->
+                    <li class="rwdnav">
+                        <a href="./member.html"><i class="ai-person"></i>LOG IN / SIGN UP</a>
+                    </li>
+                    <li class="rwdnav2"><i class="ai-search"></i>
+                        <form method="post"><input type="text" placeholder= "SEARCH"></form>
+                    </li>
+    <!-- -----------------------------rwd選單 -->
+                    
+                    <li><a href="./about.html" id="1">ABOUT</a></li>
+                    <li><a href="./notice.html" id="2">NOTICE</a></li>
+                    <li class="addarrow"><a href="#" id="3">PRODUCTS 
+                        <i class="ai-chevron-right" id="menuarrow"></i></a>
+                        <!-- 子選單 -->
+                        <ol class="childlist">
+                            <li><a href="#">所有商品</a></li>
+                            <li><a href="./productlist.html">六層紗口水巾</a></li>
+                            <li><a href="#">設計款髮帶</a></li>
+                            <li><a href="#">質感奶嘴夾</a></li>
+                            <li><a href="#">兒童工作服</a></li>
+                            <li><a href="#">送禮組合</a></li>
+                        </ol>
+                    </li>   
+                    <li><a href="#" id="4">MY ORDERS</a></li>   
+    
+    <!-- ---------------rwdfoot---------------------------------- -->
+                    <li class = rwdfooter>
+                        <div class="footer">
+                            <img src="../images/indexs/foottop.png" alt="">
+    
+                            <div class="footback"> <!--無寬度 背景色-->
+                                <div class="footblock">
+                                    <div class="footleft">
+                                        <ul>
+                                            <li><a href="./about.html">品質認證</a></li>
+                                            <li><a href="./member.html">會員專區</a></li>
+                                            <li><a href="./member.html">訂單查詢</a></li>
+                                            <li><a href="./notice.html">購物須知</a></li>
+                                        </ul>
+                                    </div><!--footleft-->
+    
+                                    <div class="footflex"> <!--圖跟聯絡我們並排-->
+                                        <div class="footmiddle">
+                                            <img src="../images/indexs/square logo.svg" alt="">
+                                        </div> <!--footmiddle-->
+    
+                                        <div class="footright">
+                                            <ul>
+                                                <li><a href="#"><i class="ai-envelope"></i></a></li>
+                                                <div class="forflex">
+                                                    <li><a href="https://www.facebook.com/coteacote.tw" target="_blank"><i class="ai-facebook-fill"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/coteacote.tw/"  target="_blank"><i class="ai-instagram-fill"></i></a></li>
+                                                </div>
+                                            </ul>
+                                        </div><!--footright-->
+                                    </div>  
+                                    <!--footflex-->  
+                                </div><!--footblock-->                
+                            </div><!--footback-->
+                        </div> <!--footer-->
+    
+                        <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
+                    </li><!--rwdfooter-->
+                    </ul>                
+    
+    <!-- ----------------RWD displaynone---start----------------- -->
+    
+                <ul class="tool">
+                    <li><i class="ai-search"></i></li>
+                    <li><input type="text" placeholder="serch"></li>
+                    <li><a href="#"><i class="ai-person"></i></a></li>
+                    <li> <a href="#"><i class="ai-heart"></i></a></li>
+                    <li> <a href="#"><i class="ai-shopping-bag"></i></a></li>
+                </ul>  
+    
+    <!-- ----------------RWD displaynone----over---------------- -->
+    
+    
+                <div class="backtotop"> 
+                    <a href="#"> <img src="../images/products/backtotopblack.png" alt=""></a> 
+                </div>        
+            </div> <!--topblock-->
+        </header>
 
 <!-- --------------section-----------------------------------------------------------------------------------section -->
 
-<!-- <div class="bg"> -->
     <h1>ABOUT</h1>
     <span class="titleline"></span>
 
@@ -62,27 +134,28 @@
 
 
     <section>
+<!-- <div class="none">      -->
         <div class="storyback">
             <div class="storyblock">
                 <!-- <img src="./images/about/01.png" alt=""> -->
                 <div class="words">
-                    <img src="./images/about/01.png" alt="">
+                    <img src="./images/about/01.png" alt="">        
                     <h3>品牌故事</h3>
                     <p>CÔTE À CÔTE   法文之意『身邊的小東西』<br>
                         橡樹果實蘊含著【耐⼼、潛⼒、運氣、⼒量】 滿載品牌對新⽣寶寶的祝福。</p>
                     <p>獨家設計打版與精工縫製。<br>
                         品牌以趣味、氣質、溫暖、寧靜的風格，<br>
-                        打造兼具美學、實⽤與獨特性的嬰幼童織品，<br>
-                        是追求⾼品質的媽媽們最佳的選擇。</p>
+                        打造兼具美學、實⽤與獨特性的嬰幼童織品，
+                        是追求⾼品質家長們的最佳選擇。</p>
                     <p> 讓柔美的織品成為寶⾙的⽇常!</p>
                 </div> <!--words-->
             </div><!--storyblock-->
-        </div> <!--storyback-->
+        </div> <!--storyback-->      
     </section>
 
-    <section>
+    <section>          
         <div class="QCblock">
-            <img class="acron" src="./images/about/sticker.png" alt="">
+            <img class="acron" src="./images/about/sticker.png" alt="">           
             <h3>安心品質</h3>
             <p>精選自然親膚的紡織材料，為嬰幼童打造成長中，最美、最愛、最貼身的居家舒適物品。</p>
 
@@ -106,11 +179,11 @@
 
                         <ul class="notice">
                             <li>▪ 嚴禁重製仿冒必究</li>
-                            <li>▪ 歡迎品牌合作 / 企業採購送禮 / 團購</li>
+                            <li>▪ 歡迎品牌合作 / 企業採購送禮 / 團購洽詢</li>
                         </ul>
                 </li>
             </ul>
-        </div> <!--QCblock-->
+        </div> <!--QCblock-->     
     </section>
 
     
@@ -119,46 +192,52 @@
 <!-- --------------section-----------------------------------------------------------------------------------section -->
 
 
-    <footer>
-        <div class="footer">
-            <img src="./images/products/brownfoottop.svg" alt="">
+   <!--=== ----------------RWD displaynone---start----------------- -->
+   <footer>
+    <div class="footer">
+        <img src="../images/products/brownfoottop.svg" alt="">
 
-            <div class="footback"> <!--無寬度 背景色-->
-            <div class="footblock">
-                <div class="footleft">
-                    <ul>
-                        <li><a href="./about.html">品牌故事</a></li>
-                        <li><a href="./about.html">品質認證</a></li>
-                        <li><a href="./member.html">會員專區</a></li>
-                        <li><a href="./member.html">訂單查詢</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="./notice.html">購物須知</a></li>
-                        <li><a href="./notice.html">運送說明</a></li>
-                        <li><a href="./notice.html">退換貨方式</a></li>
-                        <li><a href="#">隱私權條款</a></li>
-                    </ul>
-                </div><!--footleft-->
+        <div class="footback"> <!--無寬度 背景色-->
+        <div class="footblock">
+            <div class="footleft">
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">品質認證</a></li>
+                    <li><a href="#">會員專區</a></li>
+                    <li><a href="#">訂單查詢</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">購物須知</a></li>
+                    <li><a href="#">運送說明</a></li>
+                    <li><a href="#">退換貨方式</a></li>
+                    <li><a href="#">隱私權條款</a></li>
+                </ul>
+            </div><!--footleft-->
 
 
-                <div class="footmiddle">
-                    <img src="./images/indexs/square logo.svg" alt="">
-                </div> <!--footmiddle-->
-                
+            <div class="footmiddle">
+                <img src="../images/indexs/square logo.svg" alt="">
+            </div> <!--footmiddle-->
+            
 
-                <div class="footright">
-                    <ul>
-                        <li><a href="#"><i class="ai-envelope"></i>聯絡我們</a></li>
-                            <div class="forflex">
-                        <li><a href="https://www.facebook.com/coteacote.tw"  target="_blank"><i class="ai-facebook-fill"></i>FACEBOOK</a></li>
-                        <li><a href="https://www.instagram.com/coteacote.tw/"  target="_blank"><i class="ai-instagram-fill"></i>INSTRAGRAM</a></li>
-                            </div>
-                    </ul>
-                </div><!--footright-->
-            </div><!--footblock-->
-            </div><!--footback-->
-        </div> <!--footer-->
+            <div class="footright">
+                <ul>
+                    <li><a href="#"><i class="ai-envelope"></i>聯絡我們</a></li>
+                        <div class="forflex">
+                    <li><a href="#"><i class="ai-facebook-fill"></i>FACEBOOK</a></li>
+                    <li><a href="#"><i class="ai-instagram-fill"></i>INSTRAGRAM</a></li>
+                        </div>
+                </ul>
+            </div><!--footright-->
+        </div><!--footblock-->
+        </div><!--footback-->
+    </div> <!--footer-->
 
-        <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
-    </footer>
+    <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
+</footer>
+
+<!-- ===----------------RWD displaynone----over---------------- -->    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/forall.js"></script>
 </body> 
