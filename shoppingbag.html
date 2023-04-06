@@ -6,46 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./forall/reset.css">
     <link rel="stylesheet" href="./css/shoppingbag.css">
+    <link rel="stylesheet" href="./css/shoppingbagrwd.css">
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <title>CÔTE À CÔTE購物袋</title>
 </head>
 <body>
     <header>
-        <a href="./index.html"> 
-        <img src="./images/products/darklogo.svg" alt="">
-        </a>
-           
-         <div class="topblock">
-            <ul class="nav">
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./notice.html">NOTICE</a></li>
-                <li><a href="#">PRODUCTS</a>
-                     <!-- 子選單 -->
-                    <ol>
-                        <li><a href="#">所有商品</a></li>
-                        <li><a href="./productlist.html">六層紗口水巾</a></li>
-                        <li><a href="#">設計款髮帶</a></li>
-                        <li><a href="#">質感奶嘴夾</a></li>
-                        <li><a href="#">兒童工作服</a></li>
-                        <li><a href="#">送禮組合</a></li>
-                    </ol>
-                </li>   
-                <li><a href="#">MY ORDERS</a></li>    
-            </ul>
-
-            <ul class="tool">
-
-                <li><i class="ai-search"></i></li>
-                <li><input type="text" placeholder="SEARCH"></li>
-                <li><a href="./member.html"><i class="ai-person"></i></a></li>
-                <li> <a href="#"><i class="ai-heart"></i></a></li>
-                <li> <a href="./shoppingbag.html"><i class="ai-shopping-bag"></i></a></li>
-            </ul>  
-            <div class="backtotop"> 
-                <a href="#"> <img src="./images/products/backtotopblack.png" alt=""></a> 
-            </div>        
-        </div> <!--topblock-->
-    </header>
+        <div class="forrwdflex">      
+    <!-- --------rwdham------------------------- -->
+            <div class="hamburger">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+            </div>
+    <!-- --------rwdham------------------------- -->  
+    
+            <a href="index.html"> 
+                <img src="../images/products/darklogo.svg" alt="">
+            </a>
+    
+    <!-- ---------  rwdtool----------------------- -->
+            <ul class="rwdtool">
+                <li>
+                    <a href="#"><i class="ai-heart"></i></a>
+                </li>
+                <li>
+                    <a href="./shoppingbag.html"><i class="ai-shopping-bag"></i></a>
+                </li>
+            </ul> 
+        </div>
+    <!-- ---------  rwdtool----------------------- -->
+    
+            <div class="topblock">
+                <ul class="nav" id="menu"> 
+    <!-- -----------------------------rwd選單 -->
+                    <li class="rwdnav">
+                        <a href="./member.html"><i class="ai-person"></i>LOG IN / SIGN UP</a>
+                    </li>
+                    <li class="rwdnav2"><i class="ai-search"></i>
+                        <form method="post"><input type="text" placeholder= "SEARCH"></form>
+                    </li>
+    <!-- -----------------------------rwd選單 -->
+                    
+                    <li><a href="./about.html" id="1">ABOUT</a></li>
+                    <li><a href="./notice.html" id="2">NOTICE</a></li>
+                    <li class="addarrow"><a href="#" id="3">PRODUCTS 
+                        <i class="ai-chevron-right" id="menuarrow"></i></a>
+                        <!-- 子選單 -->
+                        <ol class="childlist">
+                            <li><a href="#">所有商品</a></li>
+                            <li><a href="./productlist.html">六層紗口水巾</a></li>
+                            <li><a href="#">設計款髮帶</a></li>
+                            <li><a href="#">質感奶嘴夾</a></li>
+                            <li><a href="#">兒童工作服</a></li>
+                            <li><a href="#">送禮組合</a></li>
+                        </ol>
+                    </li>   
+                    <li><a href="#" id="4">MY ORDERS</a></li>   
+    
+    <!-- ---------------rwdfoot---------------------------------- -->
+                    <li class = rwdfooter>
+                        <div class="footer">
+                            <img src="../images/indexs/foottop.png" alt="">
+    
+                            <div class="footback"> <!--無寬度 背景色-->
+                                <div class="footblock">
+                                    <div class="footleft">
+                                        <ul>
+                                            <li><a href="./about.html">品質認證</a></li>
+                                            <li><a href="./member.html">會員專區</a></li>
+                                            <li><a href="./member.html">訂單查詢</a></li>
+                                            <li><a href="./notice.html">購物須知</a></li>
+                                        </ul>
+                                    </div><!--footleft-->
+    
+                                    <div class="footflex"> <!--圖跟聯絡我們並排-->
+                                        <div class="footmiddle">
+                                            <img src="../images/indexs/square logo.svg" alt="">
+                                        </div> <!--footmiddle-->
+    
+                                        <div class="footright">
+                                            <ul>
+                                                <li><a href="#"><i class="ai-envelope"></i></a></li>
+                                                <div class="forflex">
+                                                    <li><a href="https://www.facebook.com/coteacote.tw" target="_blank"><i class="ai-facebook-fill"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/coteacote.tw/"  target="_blank"><i class="ai-instagram-fill"></i></a></li>
+                                                </div>
+                                            </ul>
+                                        </div><!--footright-->
+                                    </div>  
+                                    <!--footflex-->  
+                                </div><!--footblock-->                
+                            </div><!--footback-->
+                        </div> <!--footer-->
+    
+                        <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
+                    </li><!--rwdfooter-->
+                    </ul>                
+    
+    <!-- ----------------RWD displaynone---start----------------- -->
+    
+                <ul class="tool">
+                    <li><i class="ai-search"></i></li>
+                    <li><input type="text" placeholder="serch"></li>
+                    <li><a href="#"><i class="ai-person"></i></a></li>
+                    <li> <a href="#"><i class="ai-heart"></i></a></li>
+                    <li> <a href="#"><i class="ai-shopping-bag"></i></a></li>
+                </ul>  
+    
+    <!-- ----------------RWD displaynone----over---------------- -->
+    
+    
+                <div class="backtotop"> 
+                    <a href="#"> <img src="../images/products/backtotopblack.png" alt=""></a> 
+                </div>        
+            </div> <!--topblock-->
+        </header>
 
 <!-- --------------section-----------------------------------------------------------------------------------section -->
 <section>
@@ -64,13 +139,13 @@
 
 <!-- 購物流程-------------------------------------------- -->
         <ul class="process">
-            <li class="now">商品確認</li>
-            <li>配送資訊</li>
-            <li>完成訂購並付款</li>
+            <li class="now">1.商品確認</li>
+            <li>2.配送資訊</li>
+            <li>3.完成訂購並付款</li>
         </ul>
 
 <!-- 購物清單-------------------------------------------- -->
-    
+    <div class="tablewrap">
         <table>
             <thead>
                 <tr>
@@ -122,7 +197,7 @@
                     <td>NT$360</td>
                     <td>
                         <form action="" method="post">
-                            <button class="nexttime bhover">下次買</button>
+                            <button class="nexttime bhover"><i class="ai-heart"></i></button>
                             <button class="trash"><i class="ai-trash-can"></i></button>
                         </form>
                     </td>
@@ -171,16 +246,15 @@
                     <td class="price">NT$360<br>+NT$100<br>+NT59</td>
                     <td>
                         <form action="" method="post"> 
-                            <button class="nexttime bhover">下次買</button>
+                            <button class="nexttime bhover"><i class="ai-heart"></i></button>
                             <button class="trash"><i class="ai-trash-can"></i></button>
                         </form>
                     </td>
                 </tr>
             </tbody>
         </table>
-
-        <!-- ----------下半左----------------------------------- -->
-
+</div>
+        <!-- ----------下半左----------------------------------- -->  
     <div class="bottomblock">       
         <div class="point">
             <p>購物金</p>
@@ -188,17 +262,19 @@
                 <input class="coins" type="text" placeholder="30點">
                 <button class="use bhover">套用</button>
             </form>
-        </div>
-        <form action="" method="post">
-            <select class="delivery">
-                <option selected>配送方式</option>
-                <option>7-11店到店取貨  NT$60</option>
-                <option>全家店到店取貨 NT$60</option>
-                <option>郵局寄送 NT$80</option>
-            </select>
-        </form>
+        <!-- </div> -->
+            <form action="" method="post">
+                <select class="delivery">
+                    <option selected>配送方式</option>
+                    <option>7-11店到店取貨  NT$60</option>
+                    <option>全家店到店取貨 NT$60</option>
+                    <option>郵局寄送 NT$80</option>
+                </select>
+            </form>
+        </div>    
 
         <!-- 下半右--------------------------------------------- -->
+ 
 
         <table class="total">
             <tr>
@@ -231,10 +307,11 @@
 
 
     <!-- 下一步---------------------------------- -->
+   
     <div class="nextstep">
         <a href="#">下一步</a>
     </div>
-
+    
 </section>
 
 
@@ -243,46 +320,52 @@
 <!-- --------------section-----------------------------------------------------------------------------------section -->
 
 
-    <footer>
-        <div class="footer">
-            <img src="./images/products/brownfoottop.svg" alt="">
+<!--=== ----------------RWD displaynone---start----------------- -->
+<footer>
+    <div class="footer">
+        <img src="../images/products/brownfoottop.svg" alt="">
 
-            <div class="footback"> <!--無寬度 背景色-->
-            <div class="footblock">
-                <div class="footleft">
-                    <ul>
-                        <li><a href="./about.html">品牌故事</a></li>
-                        <li><a href="./about.html">品質認證</a></li>
-                        <li><a href="./member.html">會員專區</a></li>
-                        <li><a href="./member.html">訂單查詢</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="./notice.html">購物須知</a></li>
-                        <li><a href="./notice.html">運送說明</a></li>
-                        <li><a href="./notice.html">退換貨方式</a></li>
-                        <li><a href="#">隱私權條款</a></li>
-                    </ul>
-                </div><!--footleft-->
+        <div class="footback"> <!--無寬度 背景色-->
+        <div class="footblock">
+            <div class="footleft">
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">品質認證</a></li>
+                    <li><a href="#">會員專區</a></li>
+                    <li><a href="#">訂單查詢</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">購物須知</a></li>
+                    <li><a href="#">運送說明</a></li>
+                    <li><a href="#">退換貨方式</a></li>
+                    <li><a href="#">隱私權條款</a></li>
+                </ul>
+            </div><!--footleft-->
 
 
-                <div class="footmiddle">
-                    <img src="./images/indexs/square logo.svg" alt="">
-                </div> <!--footmiddle-->
-                
+            <div class="footmiddle">
+                <img src="../images/indexs/square logo.svg" alt="">
+            </div> <!--footmiddle-->
+            
 
-                <div class="footright">
-                    <ul>
-                        <li><a href="#"><i class="ai-envelope"></i>聯絡我們</a></li>
-                            <div class="forflex">
-                        <li><a href="https://www.facebook.com/coteacote.tw"  target="_blank"><i class="ai-facebook-fill"></i>FACEBOOK</a></li>
-                        <li><a href="https://www.instagram.com/coteacote.tw/"  target="_blank"><i class="ai-instagram-fill"></i>INSTRAGRAM</a></li>
-                            </div>
-                    </ul>
-                </div><!--footright-->
-            </div><!--footblock-->
-            </div><!--footback-->
-        </div> <!--footer-->
+            <div class="footright">
+                <ul>
+                    <li><a href="#"><i class="ai-envelope"></i>聯絡我們</a></li>
+                        <div class="forflex">
+                    <li><a href="#"><i class="ai-facebook-fill"></i>FACEBOOK</a></li>
+                    <li><a href="#"><i class="ai-instagram-fill"></i>INSTRAGRAM</a></li>
+                        </div>
+                </ul>
+            </div><!--footright-->
+        </div><!--footblock-->
+        </div><!--footback-->
+    </div> <!--footer-->
 
-        <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
-    </footer>
+    <div class="copy">Copyright © COTE A COTE all rights reserved.</div>
+</footer>
+
+<!-- ===----------------RWD displaynone----over---------------- -->    
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/forall.js"></script>
 </body> 

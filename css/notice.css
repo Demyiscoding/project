@@ -12,7 +12,7 @@ body{
 
 .mainblock{
     width: 800px;
-    margin: 0 auto 200px;
+    margin: 0 auto 100px;
 }
 
 .mainblock h2{
@@ -60,3 +60,81 @@ ul.step li{
 }
 
 
+/* .runningpics{
+    background-image: url("../images/notice/running.jpg");
+    height:100px ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 200px;
+    overflow: hidden;
+
+    padding-left: 100%;
+    animation: runningpics  10s linear  infinite ;
+}
+
+@keyframes runningpics{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -100%;
+    }
+} */
+
+
+/* .runningpics img{
+    height:100px ;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+    opacity: .9;
+
+    padding-left: 100%;
+    animation: runningpics  10s linear  infinite ;
+}
+
+@keyframes runningpics{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -100%;
+    }
+} */
+
+
+
+.runningpics {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+    opacity: 0.9;
+    display: flex;
+  }
+  
+  .runningpics img {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    animation: runningpics 10s linear infinite;
+  }
+  
+  @keyframes runningpics {
+
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    }
+  
+  

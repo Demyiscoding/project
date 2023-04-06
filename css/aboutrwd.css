@@ -1,10 +1,13 @@
 @import url("../forall/RWDheadfoot.css");
 @media screen and (max-width:415px) {
 
-    /* .body{;
-        min-width: auto;
-        width: 100%;
-    } */
+    .body{
+    background-image: url("../images/about/rwdaboutattbg.jpg");
+    width: 100vw;
+    height: 100vh;       
+    background-position: center;
+    position: fixed;
+    }
 
     .path{
         width: 330px;
