@@ -7,7 +7,7 @@ $(function(){
         $(".right").animate({top:"154px",opacity:1},1000);
         open = true;
     }else{
-        $(".right").animate({top:"100%",opacity:0.5},1000);
+        $(".right").animate({top:"100%",opacity:0},1000);
         open = false;
     }
     })
