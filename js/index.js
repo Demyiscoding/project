@@ -10,6 +10,9 @@ $(document).ready(function() {
     });
   });
 
+
+
+
 // 左側選單跟漢堡===================================
 const ham = document.getElementsByClassName("hamburger")[0];
 const bar1 = document.getElementsByClassName("bar1")[0];
@@ -63,8 +66,6 @@ productlist.addEventListener("click", function(){
         product.style.display = "none";
     }
 })
-
-
 
 
 
@@ -133,7 +134,31 @@ myorders.addEventListener("mouseout",function(){
 // 共用=====================================================
 
 
-
+   $(function(){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    nav:true,
+                    
+                    autoplay:true,
+                    autoplayTimeout:2000,
+                    responsive:{
+                    0:{
+                        items:1
+                    },
+                    300:{
+                        items:1
+                    },
+                    800:{
+                        item:2
+                    },
+                    1000:{
+                        item:3
+                    }
+                }
+            })
+        })
+    
 
 
 

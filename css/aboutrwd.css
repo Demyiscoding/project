@@ -14,6 +14,7 @@
     }
 
     .storyblock{
+        overflow: hidden;
         width: 100%;
         padding: 0px;
         padding-top: 180px;
@@ -77,6 +78,7 @@
 
  .notice li{
     letter-spacing: 1px;
+    width: auto;
 }
 
 

@@ -76,8 +76,8 @@
         background-color: #E9DFAD;
         width: 99%;
         margin: 0 auto;
-        border: none;
-        line-height: 60px;
+        border: 1px solid #414143;
+        line-height: 40px;
         color: #414143;
         font-size: 1.2rem;
         /* font-weight: 500; */

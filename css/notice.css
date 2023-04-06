@@ -121,7 +121,7 @@ ul.step li{
     /* position: absolute;
     left: 0;
     top: 0; */
-    height: 200px
+    height: 200px;
     width: 200%;
     object-fit: contain;
     animation: runningpics 20s linear infinite;

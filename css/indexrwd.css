@@ -350,7 +350,6 @@
 .footright ul{
  display: flex;
  margin-right: 50px;
- 
 }
 
 .footright a{
@@ -455,7 +454,7 @@ justify-content: center;
 
 .rec-middle >img.sti01{
     top: 350px;
-    left: 175px;
+    left: 170px;
     width: 60px;
     transform: rotate(30deg);
 }
@@ -471,6 +470,7 @@ padding-left: 20px;
 }
 
 .rec-bottom{
+    overflow: hidden;
     width: 100%;
     flex-wrap: wrap;
     position: relative;
@@ -497,13 +497,13 @@ padding-left: 20px;
 .rec-bottom p{
     position: absolute;
     top:197px;
-    right: 23px;
+    right: 16px;
 }
 
 .rec-bottom .v{
     position: absolute;
     top:221px;
-    right: 20px;
+    right: 12px;
 }
 
 .button03{

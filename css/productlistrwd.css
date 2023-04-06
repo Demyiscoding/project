@@ -27,9 +27,10 @@
 
 
 .mainblock{
+    overflow:hidden;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 380px;
     /* justify-content: center; */
 }
 
@@ -41,22 +42,23 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
-    width: 100%;
+    /* width: 100%; */
     justify-content:space-between ;
 }
 
 
 .row li{
-    width: 150px;
+    width: 180px;
     height: 380px;
-    margin:5px;
+    margin:3px;
     margin-bottom: 20px;
 }
 
 
 .bttn{
     flex-direction: column;
-    
+    color: #414143;
+
 }
 
 .filter{
