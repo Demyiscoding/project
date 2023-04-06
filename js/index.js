@@ -67,7 +67,7 @@ productlist.addEventListener("click", function(){
 
 
 
-/*
+
 //錯
 //子選單
 $(function(){
@@ -79,10 +79,11 @@ $(function(){
         open = true;
     }else{
         $(".childlist").slideup(1000,ease)
+        open = false;
     }
     })
 });
-*/
+
 
 
 
@@ -115,7 +116,7 @@ products.addEventListener("mouseover",function(){
     products.textContent = "#商品全覽";
 });
 products.addEventListener("mouseout",function(){
-    products.textContent = "PRODUCTS";
+    products.innerText = "PRODUCTS";
 });
 
 const myorders = document.getElementById("4");

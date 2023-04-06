@@ -107,24 +107,24 @@ ul.step li{
 
 
 .runningpics {
-    position: relative;
+    /* position: relative; */
     height: 100px;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     opacity: 0.9;
     display: flex;
   }
   
   .runningpics img {
     
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    top: 0; */
+    height: 200px
+    width: 200%;
     object-fit: contain;
-    animation: runningpics 10s linear infinite;
+    animation: runningpics 20s linear infinite;
   }
   
   @keyframes runningpics {

@@ -147,6 +147,7 @@ h3{
 
 .bttn{
     /* background-color: #087; */
+    color: #414143;
     display: flex;
     justify-content:end;
     align-items: center;
