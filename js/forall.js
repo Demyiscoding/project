@@ -39,13 +39,14 @@ $(function(){
     $(".addarrow").click(function(){
         if(open == false){
         $("#menuarrow").addClass("arrowclick");
-        $(".childlist").addClass('-open')
+        // $(".childlist").addClass("-open");
+        $(".childlist").animate({ height: "toggle" },300);
         // console.log('open');
         open = true;
     }else{
-        // $(".childlist").slideDown(1000)
         $("#menuarrow").removeClass("arrowclick");
-        $(".childlist").removeClass('-open')
+        // $(".childlist").removeClass("-open");
+        $(".childlist").animate({ height: "toggle" },300);
         //  console.log('open');
         open = false;
     }

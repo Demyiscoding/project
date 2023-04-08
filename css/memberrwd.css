@@ -20,16 +20,19 @@
 
 #tab1{
     display: none;
+    color: #414143  ;
 }
 
 #tab2{
     display:block ;
+    color: #414143  ;
 }
 
 
-
-
-
+button.-active{
+    background-color: #6E5F61;
+    color: #fff;
+}
 
 
 

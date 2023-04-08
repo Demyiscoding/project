@@ -1,4 +1,4 @@
-// function openTab(tabname){
+6// function openTab(tabname){
 //     const tab1 = document.getElementsByClassName("tab1");
 //     const tab2 = document.getElementsByClassName("tab2");
 //     // console.log(tab1);
@@ -27,12 +27,14 @@ $(function(){
     $(".tab1").click(function(){
         $(".login").show();
         $(".signup").hide();
-        
-
+        $(".tab1").addClass("-active");
+        $(".tab2").removeClass("-active");
     });
     $(".tab2").click(function(){
         $(".login").hide();
         $(".signup").show();
+        $(".tab2").addClass("-active");
+        $(".tab1").removeClass("-active");
     });
  // 模擬點擊 ".tab1"，使登入頁面為預設畫面
     $(".tab1").click()

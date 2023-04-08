@@ -365,9 +365,10 @@ footer{
     display:none ;
 }
 
+
     ol.-open{
         max-height: 300px;
-        display: block !important;
+        display: block;
     }
 
 }

@@ -94,27 +94,5 @@
         display:none;
     }    
 
-
-    /* 子選單 */
-
-    ol.-open{
-        max-height: 300px;
-        display: block;
-        transition: max-height 0.3s linear;
-    }
-
-    ol.-close{
-        max-height: 0;
-        display: none;
-        transition: max-height 0.3s linear;
-    }
 }
 
-
-@media screen and (min-width: 1200px){
-    .nav>li:hover > ol{
-        max-height: 300px;
-        
-    }
-    
-    }
