@@ -7,7 +7,7 @@
 
 
 
-body{
+.allbg{
     /* background-image: url("../images/about/IMG_9640\ 1aboutbg.jpg"); */
 
     background-image: url("../images/about/aboutbgpcatt.jpg");
@@ -17,6 +17,16 @@ body{
     /* min-width: 100%; */
     background-attachment:fixed;
 }
+
+
+/* .toplogo{
+    margin: 0 auto;
+    border: 1px solid red;
+    display: block;
+    text-align: center;
+    height: 1rem;
+    padding: 5px 0 20px;
+} */
 
 .path{
     width: 1200px;
@@ -209,3 +219,50 @@ h3{
     letter-spacing: 1px;
     line-height: 1.4;
 }
+
+
+
+
+
+
+
+
+
+/* -------------子選單 hover & show ------------- */
+
+.nav>li> a:hover{
+    color: #F5F5F5;   
+ }
+ 
+ .nav ol>li> a:hover{
+     background-color:#dbd5d1;
+     color: #414143;
+ }
+ 
+ ol{
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.3s ease;
+     z-index: 10;
+ }
+ 
+ .nav>li:hover > ol{
+     max-height: 300px;
+ }
+ 
+
+/* RWD子選單收合 */
+
+/* @media screen and (max-width:415px ){
+    ol.-open{
+        max-height: 300px;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .nav>li:hover > ol{
+        max-height: 300px;
+    }
+    
+} */

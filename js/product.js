@@ -4,13 +4,17 @@ $(function(){
     let open = false;
     $(".buybuybuy").click(function(){
         if(open == false){
-        $(".right").animate({top:"154px",opacity:1},1000);
+        // $(".right").animate({top:"154px",opacity:1},1000);
+
+        $('.right').addClass('-open')
         open = true;
     }else{
-        $(".right").animate({top:"100%",opacity:0},1000);
+        // $(".right").animate({top:"100%",opacity:0},1000);
+        $('.right').removeClass('-open')
         open = false;
     }
     })
+    
 });
 
 

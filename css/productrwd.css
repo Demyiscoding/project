@@ -58,11 +58,24 @@
         border-top: 1px dashed #414143;
         border-left:none ;
 
-        height: 660px;
-        position: absolute;
+        height: calc(100vh - 60px);
+        position: fixed;
         /* top:100%;  */
-        bottom:-660px ;
+        /* bottom:-660px ; */
+        top: 0 !important;
+        opacity: 0;
+        left: 0;
+        z-index: 33;
+        transform: translateY(100%);
+        pointer-events: none;
 
+    }
+
+    .right.-open{
+        /* top:154px; */
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
     }
 
     .right,.opentobuy{

@@ -38,8 +38,14 @@ body{
     font-family: 'Mukta Mahee';
     color: #414143;
     font-size: 16px;
-    box-sizing: border-box;
 }
+
+
+/* 現在不行這樣設定 logo跟backtotpo會不見 */
+
+/* *,*::before,*::after{
+    box-sizing: border-box;
+} */
 
 h1{
     font-size: 2rem;
@@ -107,7 +113,7 @@ a{
 header{
     background-image: url('../images/products/groupheadbg.png');
     width: 100%;
-    min-width: 1200px;
+    /* min-width: 1200px; */
     height: 70px;
     background-size: cover;
     background-position: center center;
@@ -122,6 +128,8 @@ header img{
     margin: 0 auto;
     padding: 5px 0 20px;
 }
+
+
 
 /* 讓nav跟tool一排 */
 .topblock{
@@ -206,6 +214,22 @@ ol{
     max-height: 300px;
 }
 
+
+/* RWD子選單收合 */
+
+@media screen and (max-width:415px ){
+    ol.-open{
+        max-height: 300px;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .nav>li:hover > ol{
+        max-height: 300px;
+    }
+    
+}
 
 
 /* tool-----------------------hover----- */
@@ -308,6 +332,7 @@ margin-left: auto;
 .footright i{
     margin-right:5px;
     font-size: 18px;
+    color: #6E5F61;
 }
 
 

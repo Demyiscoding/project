@@ -33,9 +33,6 @@
         pointer-events: none;
     }
 
-    /* .top{
-        height: 500px;
-    } */
 
     .kv{
         background-image: url("../images/indexs/indexrwdbg03.png");
@@ -82,26 +79,18 @@
     .rotate1{
         transform: rotate( 45deg) 
         translateY(9px);
-        transition: transform 0.3s ease-out;
+        transition: transform 0.4s ease-out;
     }
 
     .rotate2{
         transform: rotate(-45deg) 
         translateY(-9px);
-        transition:transform 0.3s ease-out;
+        transition:transform 0.4s ease-out;
     }
 
-
-    .rotate1back{
-        transform: rotate(0deg) 
-        translateY(0px);
-        transition: 0.3s ease-out;
-    }
-
-    .rotate2back{
-        transform: rotate(0deg) 
-        translateY(0px);
-        transition: 0.3s ease-out;
+      /* rotate的class結束後就沒有動畫了 所以要另外在bar身上加動畫恢復 */
+    .bar1, .bar2{
+        transition: transform 0.2s ease-out;
     }
 
 
@@ -142,22 +131,42 @@
         width : auto ;
     }
 
+    
+    /* .nav{
+        flex-direction: column;
+        background-color: #f5f5f5;
+        margin-left: auto ;
+        width: 90%;
+        border-radius: 3px;
+        height:  calc(100vh - 80px); 
+
+        position: absolute;
+        top:60px;
+        right:100%;
+        z-index: 10;
+        transition: 0.3s ease-out;
+        overflow-y:auto;
+    }  */
+
     .nav{
         /* display: none; */
         flex-direction: column;
         background-color: #f5f5f5;
         margin-left: auto ;
         width: 90%;
+        /* height: 780px; */
         border-radius: 3px;
-        height:  calc(100vh - 60px); 
-
+        height:  calc(100vh - 80px); 
+    
         position: absolute;
-        top:60px;
+        top:57px;
         right:100%;
-        justify-content:space-between ; 
+        /* left:0; */
+        /* justify-content:space-between ;  */
         z-index: 10;
         transition: 0.3s ease-out;
-        overflow-y:auto;
+        overflow:auto;
+    
     }
 
     .nav.open{
@@ -168,7 +177,10 @@
     .nav li{
         text-align: center;
         border-bottom: 1px dashed hsla(352, 7%, 40%, 40%);
+        /* flex-grow: 1; */
+        flex-shrink: 0;
     }
+
 
     .nav>li:last-child{
         border-bottom: 0;
@@ -181,11 +193,12 @@
         position: absolute;
         top:17px;
         right:20px;
+        transition: transform 0.2s ease;
     }
 
     .arrowclick{
         transform: rotate(90deg);
-        transition: transform 0.3s ease;
+        transition: transform 0.2s ease;
     }
 
     .nav>li>a{
@@ -199,10 +212,11 @@
     }
 
 /* -------登入&搜尋---------------------------- */
-    .rwdnav{
-        display: block;
-        justify-content:flex-start;
-    }
+.rwdnav{
+    display: block;
+    justify-content:flex-start;
+    padding-top:20px ;
+}
 
     .rwdnav2{
         display: flex;
@@ -213,11 +227,20 @@
     }
 
 
+    /* .rwdnav2 input{
+        background-color: #f5f5f5;
+        outline: none;
+        border: none;
+        caret-color: #6e5f61;
+        margin: 10px;
+        margin-left: 3px;
+        font-size: 1rem;
+        height: 20px;
+        width: 100%;
+    } */
+
     .rwdnav2 input{
         background-color: #f5f5f5;
-        /* border: 1px solid hsl(352, 7%, 40%,50%); */
-        /* border-bottom:1px solid #6e5f61; */
-        /* width: 140px; */
         outline: none;
         border: none;
         caret-color: #6e5f61;
@@ -292,22 +315,50 @@
 .rwdfooter{
     background-color: #f5f5f5;
     display: block;
+    width: 100%;
+    padding-top: 7px;
+    /* flex-grow: 1; */
 }
+
+/* .footer>img{
+    background-color: #f5f5f5;
+    padding-top: 274px;
+} */
 
 .footer>img{
     background-color: #f5f5f5;
-    padding-top: 280px;
+    padding-top: 274px;
+    padding-bottom:0 ;
+    min-width: auto;
+    width: 100%;
+    margin-left: 0;
 
+    /* flex-grow: 1; */
 }
+/* .footback{
+    background-color: #DBD5D1;
+} */
 .footback{
     background-color: #DBD5D1;
+    min-width: auto;
+    width: 100%;
 }
+
+/* .footblock{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+} */
 
 .footblock{
     /* border: 1px solid red; */
     flex-direction: column;
     align-items: flex-start;
+    /* min-width: auto; */
     width: 100%;
+
+    flex-grow: 1;
+
 }
 
 .footblock li{
@@ -336,15 +387,33 @@
 
 /* logo + media-------------------- */
 
-.footflex{
+/* .footflex{
     width: 100%;
     display: flex;
     margin: 0 auto;
     align-items: center;
+} */
+
+.footflex{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    align-items: center;
+    flex-grow: 1;
 }
-.footmiddle img{
+/* .footmiddle img{
     width: 40px;
     margin: 10px 70px 10px 60px;
+} */
+
+.footmiddle img{
+    height: 60px;
+    margin: 0 70px 10px 60px;
+}
+
+/* .footright{
+   width: 0;
 }
 
 .footright ul{
@@ -354,14 +423,40 @@
 
 .footright a{
     width: 50px;
+} */
+
+.footright{
+    width: 0;
+ }
+
+.footright ul{
+ display: flex;
+ margin-right: 50px;
 }
+
+.footright a{
+    width: 40px;
+}
+
+/* .forflex{
+    display: flex;
+}
+.copy{
+    background-color: #DBD5D1;
+    flex-grow:1;
+} */
 
 .forflex{
     /* border: 1px solid #087; */
     display: flex;
 }
+
 .copy{
     background-color: #DBD5D1;
+    min-width: auto;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -395,6 +490,9 @@
     width: 150px;
 }
 
+span.titleline{
+    width: 100%;
+}
 
 /* 主打--------------------------- */
 
@@ -453,6 +551,7 @@ justify-content: center;
 }
 
 .rec-middle >img.sti01{
+    display: none;
     top: 350px;
     left: 170px;
     width: 60px;

@@ -1,13 +1,11 @@
 @import url("../forall/RWDheadfoot.css");
 @media screen and (max-width:415px) {
 
-    .body{
-    background-image: url("../images/about/rwdaboutattbg.jpg");
+    .allbg{
+    /* background-image: url("../images/about/rwdaboutattbg.jpg"); */
     width: 100vw;
     height: 100vh;       
-    background-position: center;
-    position: fixed;
-    overflow: hidden;
+    background-position: cover;
     }
 
     .path{
@@ -32,6 +30,7 @@
     right:19%;
     }
 
+
     .words{
         width:300px;
         padding:50px 50px;
@@ -48,7 +47,7 @@
 .QCblock{ 
     width: 360px;
     padding: 0;
-    padding:0 20px;
+    /* padding:0 20px; */
  } 
 
 .QCblock>p{
@@ -71,7 +70,7 @@
 
 
  .MAT>li{
-    width:250px;
+    width:280px;
     border-right:none ;
     border-bottom: 1px dashed #414143;
     padding: 40px 0;
@@ -86,11 +85,35 @@
 .acron{
     width: 250px;
     top:-82px;
-    right:81px;
+    right:61px;
 }
 
 
     .none{
         display:none;
     }    
+
+
+    /* 子選單 */
+
+    ol.-open{
+        max-height: 300px;
+        display: block;
+        transition: max-height 0.3s linear;
+    }
+
+    ol.-close{
+        max-height: 0;
+        display: none;
+        transition: max-height 0.3s linear;
+    }
 }
+
+
+@media screen and (min-width: 1200px){
+    .nav>li:hover > ol{
+        max-height: 300px;
+        
+    }
+    
+    }

@@ -2,7 +2,7 @@
 
 header{
     background-image: url("../images/products/grouprwdheadbg.png");
-    min-width: 414px;
+    /* min-width: 414px; */
     width: 100%;
 }
 
@@ -45,6 +45,10 @@ span.bar{
     transition:transform 0.3s ease-out;
 }
 
+/* rotate的class結束後就沒有動畫了 所以要另外在bar身上加動畫恢復 */
+    .bar1, .bar2{
+    transition: transform 0.2s ease-out;
+    }
 
 /* .rotate1back{
     transform: rotate(0deg) 
@@ -95,17 +99,19 @@ span.bar{
     background-color: #f5f5f5;
     margin-left: auto ;
     width: 90%;
+    /* height: 780px; */
     border-radius: 3px;
-    height:  calc(100vh - 60px); 
+    height:  calc(100vh - 80px); 
 
     position: absolute;
     top:30px;
     right:100%;
     /* left:0; */
-    justify-content:space-between ; 
+    /* justify-content:space-between ;  */
     z-index: 10;
     transition: 0.3s ease-out;
     overflow:auto;
+
 }
 
 .nav.open{
@@ -116,6 +122,7 @@ span.bar{
 .nav li{
     text-align: center;
     border-bottom: 1px dashed hsla(352, 7%, 40%, 40%);
+    flex-shrink: 0;
 }
 
 .nav>li:last-child{
@@ -128,13 +135,14 @@ span.bar{
     display: block;
     width: 14px;
     position: absolute;
-    top:3px;
+    top:17px;
     right:20px;
+    transition: transform 0.2s ease;
 }
 
 .arrowclick{
     transform: rotate(90deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .nav>li>a{
@@ -152,6 +160,7 @@ span.bar{
 .rwdnav{
     display: block;
     justify-content:flex-start;
+    padding-top:20px ;
 }
 
 .rwdnav2{
@@ -186,7 +195,7 @@ span.bar{
 .nav ol{
     /* height: 0; */
     width: 100%;
-    /* display: none; */
+    display: none;
     position:static;
 }
 
@@ -209,24 +218,27 @@ span.bar{
  }
 
 
+
+
 /* 選單內的foot---------------------------------- */
 
 .rwdfooter{
     background-color: #f5f5f5;
     display: block;
     width: 100%;
-
-
 }
 
 .footer>img{
     background-color: #f5f5f5;
-    padding-top: 280px;
+    padding-top: 274px;
     padding-bottom:0 ;
     min-width: auto;
     width: 100%;
     margin-left: 0;
+
+    /* flex-grow: 1; */
 }
+
 
 .footback{
     background-color: #DBD5D1;
@@ -238,19 +250,19 @@ span.bar{
     /* border: 1px solid red; */
     flex-direction: column;
     align-items: flex-start;
-    min-width: auto;
+    /* min-width: auto; */
     width: 100%;
+
+    flex-grow: 1;
 
 }
 
 .footblock li{
-    /* justify-content: space-between; */
     width: auto;
-
 }
 
 .footblock a{
-    width: 90px;
+    width: 80px;
     margin: 0;
     font-size: 0.8rem;
 }
@@ -273,12 +285,10 @@ span.bar{
 .footflex{
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* margin: 0 auto; */
     align-items: center;
     flex-grow: 1;
-
-   
 }
 
 .footmiddle img{
@@ -286,12 +296,13 @@ span.bar{
     margin: 0 70px 10px 60px;
 }
 
+.footright{
+    width: 0;
+ }
 
 .footright ul{
  display: flex;
  margin-right: 50px;
-
- 
 }
 
 .footright a{
@@ -336,20 +347,6 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------暫時display none-------------- */
 
 
@@ -368,7 +365,22 @@ footer{
     display:none ;
 }
 
+    ol.-open{
+        max-height: 300px;
+        display: block !important;
+    }
+
 }
+
+@media screen and (min-width: 1200px){
+    .nav>li:hover > ol{
+        max-height: 300px;
+    }
+    
+}
+
+
+
 
 
 

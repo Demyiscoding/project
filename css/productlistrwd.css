@@ -57,7 +57,7 @@
 
 .bttn{
     flex-direction: column;
-    color: #414143;
+    color: #414143 !important;
 
 }
 

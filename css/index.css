@@ -169,10 +169,24 @@ ol{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    
 }
 
-.nav>li:hover > ol{
-    max-height: 300px;
+
+/* RWD子選單收合 */
+
+@media screen and (max-width:415px ){
+    ol.-open{
+        max-height: 300px;
+        display: block !important;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    .nav>li:hover > ol{
+        max-height: 300px;
+    }
 }
 
 

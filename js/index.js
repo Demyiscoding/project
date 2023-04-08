@@ -12,17 +12,18 @@ $(document).ready(function() {
 
 
 
-
 // 左側選單跟漢堡===================================
 const ham = document.getElementsByClassName("hamburger")[0];
 const bar1 = document.getElementsByClassName("bar1")[0];
 const bar2 = document.getElementsByClassName("bar2")[0];
+const menu = document.getElementById("menu");
 let burgeropen = document.getElementById("mask");
+// const menu = document.getElementsByClassName("childlist")[0];
 // let whole = document.documentElement;
 // console.log(ham);
 // console.log(bar1);
 // console.log(bar2);
-// console.log(menu);
+console.log(menu);
 // console.log(burgeropen);
 
 ham.addEventListener("click", function(){
@@ -35,60 +36,65 @@ ham.addEventListener("click", function(){
 });
 
 
-
-
-// 箭頭轉向 選單收合====================================
-let arrow = document.getElementById("menuarrow");
-let productlist = document.getElementsByClassName("addarrow")[0];
-let product = document.getElementsByClassName("childlist")[0];
-// console.log(productlist);
-// console.log(arrow);
-// console.log(product);
-
-/*
-    productlist.addEventListener("click", function(){
-        arrow.classList.toggle("arrowclick"); 
-
-        // 錯
-        product.classList.toggle("upanddown");           
-});
-
-*/
-
-// 用if=====================
-
-productlist.addEventListener("click", function(){
-    let open = false; //一開始是關
-    if(open == false){
-    arrow.classList.toggle("arrowclick");
-    product.style.display = "block";
-    }else{  
-        product.style.display = "none";
-    }
-})
-
-
-
-//錯
-//子選單
+//子選單收合及箭頭轉向
 $(function(){
     let open = false; //一開始是關
     $(".addarrow").click(function(){
         if(open == false){
-        $(".menuarrow").toggleClass("arrowclick");
-        $("childlist").slidedown(1000,ease)
+        $("#menuarrow").addClass("arrowclick");
+        $(".childlist").addClass('-open')
+        console.log('open');
         open = true;
     }else{
-        $(".childlist").slideup(1000,ease)
+        // $(".childlist").slideDown(1000)
+        $("#menuarrow").removeClass("arrowclick");
+        $(".childlist").removeClass('-open')
+        // console.log('open');
         open = false;
     }
+
     })
 });
 
 
+// 箭頭轉向 選單收合======失敗的part==============================
+// let arrow = document.getElementById("menuarrow");
+// let productlist = document.getElementsByClassName("addarrow")[0];
+// let product = document.getElementsByClassName("childlist")[0];
+// console.log(productlist);
+// console.log(arrow);
+// console.log(product);
+//     productlist.addEventListener("click", function(){
+//         arrow.classList.toggle("arrowclick"); 
+      
+// });
+
+
+// 用if=====================失敗
+// productlist.addEventListener("click", function(){
+//     let open = false; 
+//     if(open == false){
+//     arrow.classList.toggle("arrowclick");
+//     product.style.display = "block";
+//     }else{  
+//         product.style.display = "none";
+//     }
+// })
+
 
 
 // nav英跳中設定===========================
+
+
+
+
+
+// nav的英跳中
+
+
+
+
+
 
 const about = document.getElementById("1");
 
@@ -129,11 +135,11 @@ myorders.addEventListener("mouseout",function(){
 });
 
 
+// 共用=over====================================================
 
 
-// 共用=====================================================
 
-
+// rectop輪播
    $(function(){
                 $('.owl-carousel').owlCarousel({
                     loop:true,
