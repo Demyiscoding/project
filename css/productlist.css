@@ -167,28 +167,30 @@ h3{
     margin: 10px 3px;
     padding: 5px 10px;
 }
-/* 
-.bttn button.heart{
-    background-color: transparent;
-    color: #414143;
-} */
 
-.bttn button.heart:active{
+/* 愛心根購物袋按鈕============================== */
+
+
+.bttn button.heart{
+    /* background-color: transparent; */
+    color: #414143;
+}
+
+.bttn button.bag{
+    /* background-color:transparent; */
+    color: #414143;
+    margin-right: 10px;
+}
+
+
+button.heart.-addheart{
     background-color: crimson;
     color: #fff;
 }
 
-/* 
-.bttn button.bag{
-    background-color:transparent;
-    color: #414143;
-} */
-
-.bttn button.bag:active{
+button.bag.-addbag{
     background-color: #E9DFAD;
-    /* color:  #E9DFAD; */
 }
-
 
 
 

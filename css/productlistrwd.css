@@ -35,8 +35,6 @@
 }
 
 
-
-
 /* -----------items--------------------- */
 .row{
     flex-wrap: wrap;
@@ -57,13 +55,33 @@
 
 .bttn{
     flex-direction: column;
-    color: #414143 !important;
+}
 
+
+.bttn button.heart{
+    color: #414143;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.bttn button.bag{
+    color: #414143;
+    margin-left:30px;
+}
+
+button.heart.-addheart{
+    background-color: crimson;
+    color: #fff;
+}
+
+button.bag.-addbag{
+    background-color: #E9DFAD;
 }
 
 .filter{
     width: 80px;
     right: 20px;
+    top:97px;
 }
 
 
@@ -74,8 +92,8 @@
 .donot{
     width:350px;
     margin-right: 80px ;
-
 }
+
 
 
 .none{
@@ -83,5 +101,10 @@
 }
 
 
+.row img:hover{
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
 
 }

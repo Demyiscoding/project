@@ -226,9 +226,14 @@
         <section class="right">
                 <div class="itemname">
                     <h4>活潑可愛印花設計好搭款口水巾<br>【未含禮盒包裝】</h4>
-                    <button><i class="ai-heart"></i></button>
+                    <button id="heart"><i class="ai-heart"></i></button>
                 </div>
-                <p><b>NT$360</b></p>
+
+                <div class="price">
+                    <p>NT$</p>
+                    <p id = baseprice>360</p>
+                    <p id = totalprice></p>
+                </div>
 
                 <form action="#" method="get">
                     <!--款式選擇--------------------------->   
@@ -246,7 +251,7 @@
                     </select>
                     <!--客製化勾選--------------------------->   
                     <div class="check">
-                        <input type="checkbox" id="customization" value="客製刺繡">
+                        <input type="checkbox" id="customization" value="100">
                         <label for="customization">客製刺繡</label>  
                         <p>+NT$100</p>
                         <div id="cus_in">
@@ -287,7 +292,7 @@
 
                     <!--加購包裝勾選---------------------------> 
                     <div class="check border">
-                        <input type="checkbox" id="package" value="加購包裝">
+                        <input type="checkbox" id="package" value="59">
                         <label for="package">加購精緻禮盒包裝</label>
                         <p>+NT$59</p>
                     </div>

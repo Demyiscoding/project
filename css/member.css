@@ -28,7 +28,7 @@
 }
 
 .tab>button{
-     background-color: transparent; 
+    background-color: transparent; 
     width: 50%;
     height: 4.5rem;
     outline: none;
@@ -36,6 +36,7 @@
     /* border-right: 1px dashed #414143; */
     cursor: pointer;
     position: relative;
+    color: #414143;
 }
 
 
