@@ -35,6 +35,16 @@
         margin-left: 40px;
         overflow-x: auto;
     }
+
+    button.nexttime, button.trash{
+    color: #414143;
+    }
+
+    button.use{
+        background-color:#414143;
+        color: #fff;
+    }
+
     
     .bottomblock{
         width: 80%;

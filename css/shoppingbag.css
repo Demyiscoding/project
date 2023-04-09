@@ -201,10 +201,11 @@ input.coins{
 }
 
 button.use{
-    background-color: transparent;
+    background-color:#414143;
+    color: #fff;
     border: none;
     cursor: pointer;
-    border: 1px solid #414143;
+    /* border: 1px solid #414143; */
 }
 
 
