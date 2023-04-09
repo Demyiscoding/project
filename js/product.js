@@ -17,25 +17,6 @@ $(function(){
     
 });
 
-//失敗
-// const button = document.querySelectorAll(".buybuybuy");
-// const buylist = document.querySelectorAll(".right"); 
-// // console.log(button);
-// // console.log(buylist);
-
-// button.addEventListener("click", function(){
-//     right.classList.toggle("opentobuy")
-// });
-
-
-
-// const button = document.getElementsByClassName(".buybuybuy")[0];
-// const buylist = document.getElementsByClassName(".right"); 
-// button.addEventListener("click", function(){
-//     right.classList.toggle("opentobuy")
-// });
-
-
 //願望清單的按鈕
 const heart = document.getElementById("heart");
     heart.addEventListener("click", function(){
@@ -43,12 +24,14 @@ const heart = document.getElementById("heart");
         if(this.classList.contains("-addlike")){
             this.classList.add("-addlike")
             }else{
-                this.classList.remove("-addlike")
+                // this.classList.remove("-addlike")
                 if(confirm("確定將本產品從願望清單移除?")){
-                }else{};
+                    this.classList.remove("-addlike")
+                }else{
+                    this.classList.add("-addlike")
+                };
             }
-
-    })
+    });
 
 
 //加購價加上去

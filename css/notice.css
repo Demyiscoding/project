@@ -55,75 +55,30 @@ ul.step li{
     padding:10px 0 ;
 }
 
-.noticelist, .return{
+.noticelist, .return>ul{
     padding-left: 20px;
 }
 
 
-/* .runningpics{
-    background-image: url("../images/notice/running.jpg");
-    height:100px ;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-bottom: 200px;
-    overflow: hidden;
-
-    padding-left: 100%;
-    animation: runningpics  10s linear  infinite ;
-}
-
-@keyframes runningpics{
-    0%{
-        left: 0;
-    }
-    100%{
-        left: -100%;
-    }
-} */
-
-
-/* .runningpics img{
-    height:100px ;
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 100px;
-    opacity: .9;
-
-    padding-left: 100%;
-    animation: runningpics  10s linear  infinite ;
-}
-
-@keyframes runningpics{
-    0%{
-        left: 0;
-    }
-    100%{
-        left: -100%;
-    }
-} */
-
-
+/* 照片跑馬 */
 
 .runningpics {
     /* position: relative; */
     height: 100px;
-    width: 100%;
-    overflow: hidden;
+    width: 200%;
+    /* overflow: hidden; */
     margin-bottom: 150px;
     opacity: 0.9;
     display: flex;
   }
   
   .runningpics img {
-    
     /* position: absolute;
     left: 0;
     top: 0; */
-    height: 200px;
+    height: 100px;
     width: 200%;
-    object-fit: contain;
+    object-fit:cover;
     animation: runningpics 20s linear infinite;
   }
   

@@ -146,11 +146,14 @@ button.nexttime{
     cursor: pointer;
 }
 
-button.nexttime :active{
-   color: crimson;
-    /* color: #fff; */
+button.nexttime.-next{
+   background-color: crimson;
+    color: #fff;
 }
 
+#one.gray{
+    background-color: hsla(0, 0%, 80%, 0.3);
+}
 
 
 
@@ -203,12 +206,6 @@ button.use{
     cursor: pointer;
     border: 1px solid #414143;
 }
-
-
-/* .bhover:hover{
-    background-color: #414143;
-    color: #fff;
-} */
 
 
 select.delivery{

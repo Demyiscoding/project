@@ -1,5 +1,33 @@
 @import url("../forall/RWDheadfoot.css");
 @media screen and (max-width:415px) {
+
+
+    .path{
+        width:330px;
+    }
+
+    .mainblock{
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 30px;
+    }
+
+    .runningpics {
+        height: 80px;
+        width: 100%;
+        padding-top: 50px;
+        overflow: hidden;
+
+    }
+
+    .runningpics img {
+        height: 80px;
+        object-fit: contain;
+
+    }
     
-    
+
+    .none{
+        display: none;
+    }
 }

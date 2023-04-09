@@ -8,7 +8,7 @@
 
     .process{
         min-width: auto;
-        width: 400px;
+        width:80% ;
         flex-direction: column;
         padding: 20px 0 30px;
     }
