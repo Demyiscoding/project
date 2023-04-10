@@ -491,7 +491,10 @@ align-items: center;
 
 .rec-middle .y{
     box-shadow: 5px -5px 0 #e9dfad;
+
+    /* opacity: 0; */
 }
+
 
 .rec-middle .w{
     box-shadow: 5px -5px 0 #bebbb6;
@@ -501,11 +504,67 @@ align-items: center;
     box-shadow: 5px -5px 0 rgb(225, 223, 219);
 }
 
-
 .rec-middle .p{
     box-shadow: 5px -5px 0 rgb(250, 187, 189);
 }
 
+/* 搖搖01--------------------- */
+
+/* 捲動到浮現 */
+.fadein{
+    opacity: 0;
+}
+
+.fadein.-active{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* 浮現後轉動 */
+
+.fadein.-active.spin{
+    transform: rotate(10deg);
+    animation: spin 1s ease infinite;
+    animation-direction:alternate;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+/* 搖搖02--------------------- */
+
+/* 捲動到浮現 */
+.fadein2{
+    opacity: 0;
+}
+
+.fadein2.-active2{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+/* 浮現後轉動 */
+.fadein2.-active2.spin2{
+    animation: spin2 1s ease infinite; 
+    animation-direction:alternate;
+    /* animation-delay: 0.5s; */
+
+}
+@keyframes spin2{
+    0% {
+      /* opacity: 1; */
+      transform: rotate(-5deg);
+    }
+    100%{
+        /* opacity: 1; */
+        transform:rotate(10deg);
+    }
+} 
 
 /*3.------------------ */
 

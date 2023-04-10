@@ -168,8 +168,57 @@ myorders.addEventListener("mouseout",function(){
 
 
 
+// recmiddle //搖搖第1種  不能把transition跟animation設定在一起會無效
+
+const fadeinpics = document.querySelectorAll(".fadein");
+//先transition//再animation
+fadeinpics.forEach(fadein => {
+    fadein.addEventListener("transitionend",function(){
+        if(fadein.classList.contains("-active")){
+            fadein.classList.add("spin");
+        }
+    })
+})
+
+window.addEventListener("scroll",function(){
+    fadeinpics.forEach(fadein => {
+        //觸發動畫區塊的頂部
+        const inposition = fadein.getBoundingClientRect().top + window.scrollY;
+        //視窗捲動的底部
+        const screenposition = window.innerHeight + window.scrollY;
+
+        if(screenposition > inposition){
+            fadein.classList.add("-active");
+        }
+    });
+})
 
 
+
+//搖搖第2種  
+
+//先transition//再animation
+const fadeinpics2 = document.querySelectorAll(".fadein2");
+fadeinpics2.forEach(fadein2 => {
+    fadein2.addEventListener('transitionend', () => {
+        if (fadein2.classList.contains('-active2')) {
+          fadein2.classList.add('spin2');
+        }
+      });
+})
+
+// 滾動到才觸發
+window.addEventListener("scroll",function(){
+    fadeinpics2.forEach(fadein2 => {
+        //觸發動畫區塊的頂部
+        const inposition = fadein2.getBoundingClientRect().top + window.scrollY;
+        //視窗捲動的底部
+        const screenposition = window.innerHeight + window.scrollY;
+        if(screenposition > inposition){
+            fadein2.classList.add("-active2");
+        }
+    });
+})
 
 
 

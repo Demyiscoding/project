@@ -79,8 +79,10 @@ ul.step li{
     height: 100px;
     width: 200%;
     object-fit:cover;
-    animation: runningpics 20s linear infinite;
+    animation: runningpics 50s linear infinite;
   }
+  
+
   
   @keyframes runningpics {
 
@@ -90,6 +92,12 @@ ul.step li{
     100% {
         transform: translateX(-100%);
     }
+
+
+
+
+
+    
     }
   
   

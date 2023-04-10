@@ -131,23 +131,6 @@
         width : auto ;
     }
 
-    
-    /* .nav{
-        flex-direction: column;
-        background-color: #f5f5f5;
-        margin-left: auto ;
-        width: 90%;
-        border-radius: 3px;
-        height:  calc(100vh - 80px); 
-
-        position: absolute;
-        top:60px;
-        right:100%;
-        z-index: 10;
-        transition: 0.3s ease-out;
-        overflow-y:auto;
-    }  */
-
     .nav{
         /* display: none; */
         flex-direction: column;
@@ -226,19 +209,6 @@
         padding: 10px 0 10px 40px ;
     }
 
-
-    /* .rwdnav2 input{
-        background-color: #f5f5f5;
-        outline: none;
-        border: none;
-        caret-color: #6e5f61;
-        margin: 10px;
-        margin-left: 3px;
-        font-size: 1rem;
-        height: 20px;
-        width: 100%;
-    } */
-
     .rwdnav2 input{
         background-color: #f5f5f5;
         outline: none;
@@ -267,28 +237,10 @@
     position:static;
 }
 
-
-/* .nav ol .upanddown{
-    display: block;
-    height: 300px;
-    overflow: hidden;
-    transition: 0.3s ease;
-} */
-
-
-/* .nav ol .upanddown{
-    max-height: 300px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-} */
-
-
 .nav ol li{
     width: 100%;
     background-color: #DBD5D1;
-
     /* display: block; */
-
 }
 
 .nav ol li a{
@@ -297,7 +249,6 @@
     color: #6e5f61;
     display: block;
     text-align: left;
-
     /* display: block; */
 }
 
@@ -332,23 +283,13 @@
     min-width: auto;
     width: 100%;
     margin-left: 0;
-
-    /* flex-grow: 1; */
 }
-/* .footback{
-    background-color: #DBD5D1;
-} */
+
 .footback{
     background-color: #DBD5D1;
     min-width: auto;
     width: 100%;
 }
-
-/* .footblock{
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-} */
 
 .footblock{
     /* border: 1px solid red; */
@@ -362,7 +303,6 @@
 }
 
 .footblock li{
-    /* justify-content: space-between; */
     width: auto;
 
 }
@@ -387,13 +327,6 @@
 
 /* logo + media-------------------- */
 
-/* .footflex{
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-} */
-
 .footflex{
     width: 100%;
     display: flex;
@@ -402,28 +335,11 @@
     align-items: center;
     flex-grow: 1;
 }
-/* .footmiddle img{
-    width: 40px;
-    margin: 10px 70px 10px 60px;
-} */
 
 .footmiddle img{
     height: 60px;
     margin: 0 70px 10px 60px;
 }
-
-/* .footright{
-   width: 0;
-}
-
-.footright ul{
- display: flex;
- margin-right: 50px;
-}
-
-.footright a{
-    width: 50px;
-} */
 
 .footright{
     width: 0;
@@ -438,14 +354,6 @@
     width: 40px;
 }
 
-/* .forflex{
-    display: flex;
-}
-.copy{
-    background-color: #DBD5D1;
-    flex-grow:1;
-} */
-
 .forflex{
     /* border: 1px solid #087; */
     display: flex;
@@ -458,8 +366,6 @@
     padding-top: 20px;
     box-sizing: border-box;
 }
-
-
 
 
 /* 頁首&頁尾 共用================================================= */
@@ -557,6 +463,68 @@ justify-content: center;
     width: 60px;
     transform: rotate(30deg);
 }
+
+
+/* 滾動------------------------------------------ */
+
+/* 搖搖01--------------------- */
+
+/* 捲動到浮現 */
+
+.fadein{
+    opacity: 0;
+}
+
+.fadein.-active{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* 浮現後轉動 */
+
+.fadein.-active.spin{
+    /* transform: rotate(0deg); */
+    animation: spin 1s ease forwards;
+    /* animation-direction:alternate; */
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+/* 搖搖02--------------------- */
+
+/* 捲動到浮現 */
+.fadein2{
+    opacity: 0;
+}
+
+.fadein2.-active2{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+/* 浮現後轉動 */
+.fadein2.-active2.spin2{
+    /* transform: rotate(-10deg); */
+    animation: spin2 1s ease forwards; 
+}
+
+@keyframes spin2{
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+
+        transform:rotate(10deg);
+    }
+} 
+
+
 
 
 /* mainblock======================================== */

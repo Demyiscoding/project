@@ -23,6 +23,8 @@
     .runningpics img {
         height: 80px;
         /* object-fit: contain; */
+        animation: runningpics 15s linear infinite;
+
 
     }
     

@@ -56,7 +56,6 @@ $(function(){
 
 
 
-
 // nav英跳中設定===========================
 
 const about = document.getElementById("1");
