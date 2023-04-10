@@ -144,8 +144,7 @@ myorders.addEventListener("mouseout",function(){
                 $('.owl-carousel').owlCarousel({
                     loop:true,
                     margin:10,
-                    nav:true,
-                    
+                    // nav:true,
                     autoplay:true,
                     autoplayTimeout:2000,
                     responsive:{
