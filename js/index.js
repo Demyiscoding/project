@@ -128,7 +128,7 @@ products.addEventListener("mouseout",function(){
 
 const myorders = document.getElementById("4");
 myorders.addEventListener("mouseover",function(){
-    myorders.textContent = "訂單查詢";
+    myorders.textContent = "#訂單查詢";
 });
 myorders.addEventListener("mouseout",function(){
     myorders.textContent = "MY ORDERS";
