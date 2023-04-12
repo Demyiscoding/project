@@ -38,13 +38,15 @@
     position: relative;
     color: #414143;
 }
+.tab1{
+    background-color: #6E5F61;
+}
 
-
-.tab>button:hover{
+/* .tab>button:hover{
     background-color:#6E5F61;
     color: #f5f5f5;
     transition: background-color 0.2s ease;
-}
+} */
 
 
 
@@ -146,7 +148,7 @@
 
 
 .btn a{
-    font-size: 14px;
+    font-size: 1rem;
     background-color: #E9DFAD;
     color: #414143;
     padding: 10px 100px;
@@ -223,6 +225,17 @@
     transition: background-color 0.3s ease;
 }
 
+
+
+
+.tab>button{
+    color: #414143;
+}
+
+button.-active{
+    background-color: #6E5F61;
+    color: #fff;
+}
 
 
 

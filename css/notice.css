@@ -55,10 +55,21 @@ ul.step li{
     padding:10px 0 ;
 }
 
+.noticelist li{
+    margin-bottom: 10px;
+}
+
+.step li{
+    margin-bottom: 5px;
+}
+
 .noticelist, .return>ul{
     padding-left: 20px;
 }
 
+.return li{
+    margin-bottom: 10px;
+}
 
 /* 照片跑馬 */
 
