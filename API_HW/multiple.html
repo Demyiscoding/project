@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map{
+            width: 800px;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3ibLlgXbJl05AwpK60IBpgx5SfmdtYR0&callback=initMap"></script>
+    <!-- 叢集標記的CDN -->
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+
+
+    <script>
+        function initMap() {
+        // The location of Uluru
+        const TFAM = { lat: 25.073110345689578, lng: 121.52476695717866};
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: TFAM,
+        });
+        const img ="img/placeholder.png"
+        for(let i = 0; i<locations.length; i++){
+            const marker = new google.maps.Marker({
+            position: locations[i],
+            map: map,
+            title:"地點i"+(i+1),
+            icon:img
+            });
+            //資訊備註欄
+            const infowindow = new google.maps.InfoWindow({
+            content: pos[i],
+            ariaLabel: "地點"+(i+1),
+            });
+            marker.addListener("click", () => {
+                infowindow.open({
+                anchor: marker,
+                map,
+                });
+            });
+        }
+    }
+
+    const pos = ["台北市立美術館","花博公園","圓山大飯店","敦煌書局","大同大學"]
+    const locations = [
+      { lat: 25.073110345689578, lng: 121.52476695717866},
+      { lat:25.069027366490698, lng:121.52202036987059},
+      { lat:25.078964312331326, lng:121.52650633687483},
+      { lat:25.06848858792273, lng:121.52249913015042},
+      { lat: 25.067400144665587, lng:121.52179102698183},
+    ];
+
+    // 創建標記
+    const markers = locations.map((position, i) => {
+        return new google.maps.Marker({
+          position,
+          label: `${i + 1}` // 使用數字作為標記的標籤
+        });
+      });
+
+      const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+
+    // 載入地圖
+    initMap();
+
+    </script>
+    
+</body>
+</html>
