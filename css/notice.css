@@ -82,15 +82,20 @@ ul.step li{
     opacity: 0.9;
     display: flex;
   }
+
+  .imgflow{
+    overflow: hidden;
+  }
   
   .runningpics img {
     /* position: absolute;
     left: 0;
     top: 0; */
     height: 100px;
-    width: 200%;
+    width: 100%;
     object-fit:cover;
     animation: runningpics 50s linear infinite;
+    /* overflow: hidden; */
   }
   
 
